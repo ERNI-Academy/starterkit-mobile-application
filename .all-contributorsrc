@@ -1,0 +1,31 @@
+{
+  "files": ["README.md"],
+  "imageSize": 100,
+  "commit": false,
+  "contributorsPerLine": 7,
+  "projectName": "starterkit-mobile-application",
+  "projectOwner": "Erni-Academy",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square)](#contributors)",
+  "contributors": [
+    {
+      "login": "Rabosa616",
+      "name": "Oscar Vaquero",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12774781?v=4",
+      "profile": "https://betterask.erni",
+      "contributions": [
+        "code",
+        "content",
+        "doc",
+        "design",
+        "ideas", 
+        "maintenance",
+        "test",
+        "example",
+        "review"
+      ]
+    }
+    ]
+}

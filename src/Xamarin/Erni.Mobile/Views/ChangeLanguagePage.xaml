@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="Erni.Mobile.Views.ChangeLanguagePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:helpers="clr-namespace:Erni.Mobile.Helpers">
+    <ContentPage.Content>
+        <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
+            <Label Text="{helpers:Translate SelectLanguage, StringFormat='{0}:'}" />
+            <Picker
+                x:Name="picker"
+                ItemDisplayBinding="{Binding Name}"
+                ItemsSource="{Binding Languages}"
+                SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}" />
+
+            <Button
+                BackgroundColor="Black"
+                Command="{Binding ChangeLangugeCommand, Mode=OneTime}"
+                Text="{helpers:Translate Save}"
+                TextColor="White" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

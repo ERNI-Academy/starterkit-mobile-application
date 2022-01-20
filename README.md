@@ -2,25 +2,59 @@
 
 ERNI Academy mobile boilerplate to start a cross-platform or native mobile application.
 
-## Getting Started ##
+## Getting Started
 
 * CrossPlatform
-   * Maui:
-      * [Install .NET MAUI](https://docs.microsoft.com/dotnet/maui/get-started/first-app?pivots=windows)
-      * [.NET MAUI documentation](https://docs.microsoft.com/dotnet/maui)
-   * Xamarin:
-   * Flutter
-   * React Native
-   * Ionic
+  * Maui:
+    * [Install .NET MAUI](https://docs.microsoft.com/dotnet/maui/get-started/first-app?pivots=windows)
+    * [.NET MAUI documentation](https://docs.microsoft.com/dotnet/maui)
+    * [Migration from Xamarin](https://docs.microsoft.com/en-us/dotnet/maui/get-started/migrate)
+  * Xamarin:
+    * [Install Xamarin](https://docs.microsoft.com/en-us/xamarin/get-started/installation/?pivots=windows)
+    * [Xamarin documentaion](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/)
+  * Flutter
+    * [Install Flutter](https://docs.flutter.dev/get-started/install)
+    * [Flutter documentation](https://docs.flutter.dev/)
+  * React Native
+    * [Install React Native](https://reactnative.dev/docs/environment-setup)
+    * [React Native documentation](https://reactnative.dev/)
+  * Ionic
+    * [Install Ionic](https://ionicframework.com/docs/intro/cli)
+    * [Ionic documentation](https://ionicframework.com/docs/)
 * Native
-   * Android
-   * Ios
+  * Android
+    * [Install Android studio](https://developer.android.com/studio)
+    * [Android documentation](https://developer.android.com/)
+  * iOS
+    * [Install Xcode](https://developer.apple.com/xcode/)
+    * [iOS development documentation](https://developer.apple.com/documentation/)
 
 ## Prerequisites
-This is an example of how to list things you need to use the software and how to install them.
+
+To run and play with the boilerplates you need to install the followinf ides that you like more:
+
+* Visual Studio 2022
+* Visual Studio Mac
+* Visual studio code
+* Eclipse
+* Android Studio (android & flutter)
+* XCode (iOS only)
 
 ## Installation
-TODO: Installation instructions 
+
+Follow the Get started documentation on how to install all required tools for each platform
+
+## Usage Instructions
+
+* CrossPlatform
+  * [Maui](./docs/crossplatform/maui/README.md)
+  * [Xamarin](./docs/crossplatform/xamarin/README.md)
+  * [Flutter](./docs/crossplatform/flutter/README.md)
+  * [React Native](./docs/crossplatform/reactnative/README.md)
+  * [Ionic](./docs/crossplatform/ionic/README.md)
+* Native
+  * [Android](./docs/native/android/README.md)
+  * [iOS](./docs/native/ios/README.md)
 
 ## Contributing
 
@@ -35,10 +69,10 @@ Please see our [Contribution Guide](CONTRIBUTING.md) to learn how to contribute.
 Please see our [Code of Conduct](CODE_OF_CONDUCT.md)
 
 ## Stats
+
 <img src="https://repobeats.axiom.co/api/embed/3a01b2a95bfa6e13f36e86951a68c3b7da140d0c.svg" />
 
-
-**Contact:** 
+**Contact:**
 Erni_Services  - [@ERNI](https://twitter.com/ERNI) - esp-services@betterask.erni
 
 ## Contributors ✨

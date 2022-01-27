@@ -1,7 +1,9 @@
 # About starterkit-mobile-application
 
 ERNI Academy mobile boilerplate to start a cross-platform or native mobile application.
-
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 ## Getting Started ##
 
 * CrossPlatform

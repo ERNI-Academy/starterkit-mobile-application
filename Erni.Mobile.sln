@@ -59,6 +59,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android", "Android", "{DB92
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iOS", "iOS", "{470AB180-EBB6-4AAA-BA8A-7DE1B9BC95C8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{A77ADE6A-9453-4270-BA8F-A8B4B384FBB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossPlatform", "CrossPlatform", "{8A4FD764-C47E-4359-9330-8AE34F3960EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xamarin", "Xamarin", "{360C26AA-755E-48E6-A7D4-9285712E6DFF}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\CrossPlatform\Xamarin\azure-pipelines.yml = scripts\CrossPlatform\Xamarin\azure-pipelines.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Github", "Github", "{C2E65619-BE1A-4465-8BF9-38C7D11CFE6A}"
+	ProjectSection(SolutionItems) = preProject
+		.github\config.yml = .github\config.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{B6AC2CF5-775F-4AD8-8EDC-A810E3746D50}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\CI-Xamarin.Forms.Android.yml = .github\workflows\CI-Xamarin.Forms.Android.yml
+		.github\workflows\CI-Xamarin.Forms.iOS.yml = .github\workflows\CI-Xamarin.Forms.iOS.yml
+		.github\workflows\CI-Xamarin.Forms.UWP.yml = .github\workflows\CI-Xamarin.Forms.UWP.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -215,6 +236,10 @@ Global
 		{511B06EA-BC95-4936-A400-51DA2DF987C7} = {25ED61A0-6F6C-4BE6-85C5-145E87B7F63A}
 		{DB92235E-2CBF-477D-9325-0CD9B5C301B4} = {511B06EA-BC95-4936-A400-51DA2DF987C7}
 		{470AB180-EBB6-4AAA-BA8A-7DE1B9BC95C8} = {511B06EA-BC95-4936-A400-51DA2DF987C7}
+		{8A4FD764-C47E-4359-9330-8AE34F3960EB} = {A77ADE6A-9453-4270-BA8F-A8B4B384FBB6}
+		{360C26AA-755E-48E6-A7D4-9285712E6DFF} = {8A4FD764-C47E-4359-9330-8AE34F3960EB}
+		{C2E65619-BE1A-4465-8BF9-38C7D11CFE6A} = {A77ADE6A-9453-4270-BA8F-A8B4B384FBB6}
+		{B6AC2CF5-775F-4AD8-8EDC-A810E3746D50} = {C2E65619-BE1A-4465-8BF9-38C7D11CFE6A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2B1CA6A8-EB1B-47D8-8C59-5A0D856CBA16}

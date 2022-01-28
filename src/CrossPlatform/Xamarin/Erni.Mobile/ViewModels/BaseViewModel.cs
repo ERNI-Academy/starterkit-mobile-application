@@ -1,5 +1,7 @@
 ﻿using Erni.Mobile.Models;
 using Erni.Mobile.Services;
+using Erni.Mobile.Services.Configuration;
+using Erni.Mobile.Services.Logging;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,6 +13,8 @@ namespace Erni.Mobile.ViewModels
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        public ILoggingService LoggingService => DependencyService.Get<ILoggingService>();
+        public IApplicationSettingsService ApplicationSettingsService => DependencyService.Get<IApplicationSettingsService>();
 
         bool isBusy = false;
         public bool IsBusy

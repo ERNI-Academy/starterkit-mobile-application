@@ -1,6 +1,9 @@
 ﻿using Erni.Mobile.Helpers;
 using Erni.Mobile.Services;
+using Erni.Mobile.Services.Configuration;
+using Erni.Mobile.Services.Logging;
 using System.Globalization;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Erni.Mobile
@@ -11,9 +14,16 @@ namespace Erni.Mobile
         public App()
         {
             InitializeComponent();
-            LocalizationResourceManager.Instance.SetCulture(CultureInfo.GetCultureInfo("en")).GetAwaiter().GetResult();
-            DependencyService.Register<MockDataStore>();
+            RegisterServicesAndProviders();
+            VersionTracking.Track();
+            InitializeLanguage();
+
             MainPage = new AppShell();
+        }
+
+        private static void InitializeLanguage()
+        {
+            LocalizationResourceManager.Instance.SetCulture(CultureInfo.GetCultureInfo("en")).GetAwaiter().GetResult();
         }
 
         protected override void OnStart()
@@ -26,6 +36,21 @@ namespace Erni.Mobile
 
         protected override void OnResume()
         {
+        }
+
+        private void RegisterServicesAndProviders()
+        {
+            if (ApplicationMode.UseDebugLogging)
+            {
+                DependencyService.Register<MockDataStore>();
+                DependencyService.Register<ApplicationSettingsService>();
+                DependencyService.Register<MockLoggingService>();
+            }
+            else
+            {
+                DependencyService.Register<ApplicationSettingsService>();
+                DependencyService.Register<AppCenterLoggingService>();
+            }
         }
     }
 }

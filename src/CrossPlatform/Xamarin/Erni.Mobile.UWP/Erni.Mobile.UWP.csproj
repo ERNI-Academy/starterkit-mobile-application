@@ -97,6 +97,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Configuration\ConfigurationFileProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -184,7 +185,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomRenders\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Erni.Mobile\appsettings.json">
+      <Link>Assets\appsettings.json</Link>
+    </Content>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

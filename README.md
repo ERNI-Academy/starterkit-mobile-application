@@ -4,6 +4,10 @@ ERNI Academy mobile boilerplate to start a cross-platform or native mobile appli
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+[![Build Xamarin.Forms.Android app](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.Android.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.Android.yml)
+[![Build Xamarin.Forms.iOS app](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.iOS.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.iOS.yml)
+[![Build Xamarin.Forms.UWP app](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.UWP.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.UWP.yml)
 ## Getting Started ##
 
 * CrossPlatform

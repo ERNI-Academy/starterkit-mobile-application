@@ -80,6 +80,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{
 		.github\workflows\CI-Xamarin.Forms.UWP.yml = .github\workflows\CI-Xamarin.Forms.UWP.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UwpInstaller", "UwpInstaller", "{7AFA422B-7BD0-4592-8803-B0B95BA0C971}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\CrossPlatform\Xamarin\UwpInstaller\Generate-AppxMsi.ps1 = scripts\CrossPlatform\Xamarin\UwpInstaller\Generate-AppxMsi.ps1
+		scripts\CrossPlatform\Xamarin\UwpInstaller\Install-CertificateAndSideLoad.ps1 = scripts\CrossPlatform\Xamarin\UwpInstaller\Install-CertificateAndSideLoad.ps1
+		scripts\CrossPlatform\Xamarin\UwpInstaller\Install-UntrustedAppx.ps1 = scripts\CrossPlatform\Xamarin\UwpInstaller\Install-UntrustedAppx.ps1
+		scripts\CrossPlatform\Xamarin\UwpInstaller\Template_x64.wxs = scripts\CrossPlatform\Xamarin\UwpInstaller\Template_x64.wxs
+		scripts\CrossPlatform\Xamarin\UwpInstaller\Template_x86.wxs = scripts\CrossPlatform\Xamarin\UwpInstaller\Template_x86.wxs
+		scripts\CrossPlatform\Xamarin\UwpInstaller\Uninstall-UntrustedAppx.ps1 = scripts\CrossPlatform\Xamarin\UwpInstaller\Uninstall-UntrustedAppx.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -240,6 +250,7 @@ Global
 		{360C26AA-755E-48E6-A7D4-9285712E6DFF} = {8A4FD764-C47E-4359-9330-8AE34F3960EB}
 		{C2E65619-BE1A-4465-8BF9-38C7D11CFE6A} = {A77ADE6A-9453-4270-BA8F-A8B4B384FBB6}
 		{B6AC2CF5-775F-4AD8-8EDC-A810E3746D50} = {C2E65619-BE1A-4465-8BF9-38C7D11CFE6A}
+		{7AFA422B-7BD0-4592-8803-B0B95BA0C971} = {360C26AA-755E-48E6-A7D4-9285712E6DFF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2B1CA6A8-EB1B-47D8-8C59-5A0D856CBA16}

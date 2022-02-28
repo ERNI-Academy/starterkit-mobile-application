@@ -298,7 +298,7 @@ stages:
           cd "$(AppxPackageDir)\x64\Erni.Mobile.UWP_1.0.0.0_Test\"
           dir *.*
 
-  # Publish UWP package for main branch builds
+    # Publish UWP package for main branch builds
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Build Artifacts'
       condition: and(succeeded(), eq(variables['IsMainBranch'], true)) 

@@ -3,7 +3,7 @@
     x:Class="Erni.Mobile.AppShell"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:helpers="clr-namespace:Erni.Mobile.Helpers"
+    xmlns:extensions="clr-namespace:Erni.Mobile.Extensions"
     xmlns:local="clr-namespace:Erni.Mobile.Views"
     Title="Erni.Mobile">
 
@@ -33,16 +33,16 @@
 
     <TabBar>
         <ShellContent
-            Title="{helpers:Translate AppShell_About}"
+            Title="{extensions:Translate AppShell_About}"
             ContentTemplate="{DataTemplate local:AboutPage}"
             Icon="icon_about.png"
             Route="AboutPage" />
         <ShellContent
-            Title="{helpers:Translate AppShell_Browse}"
+            Title="{extensions:Translate AppShell_Browse}"
             ContentTemplate="{DataTemplate local:ItemsPage}"
             Icon="icon_feed.png" />
         <ShellContent
-            Title="{helpers:Translate AppShell_Language}"
+            Title="{extensions:Translate AppShell_Language}"
             ContentTemplate="{DataTemplate local:ChangeLanguagePage}"
             Icon="icon_feed.png" />
     </TabBar>

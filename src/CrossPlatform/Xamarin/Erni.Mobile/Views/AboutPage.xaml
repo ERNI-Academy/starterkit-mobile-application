@@ -4,7 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:FontAwesome="clr-namespace:Erni.Mobile.Helpers.Fonts"
-    xmlns:helpers="clr-namespace:Erni.Mobile.Helpers"
+    xmlns:extensions="clr-namespace:Erni.Mobile.Extensions"
     xmlns:vm="clr-namespace:Erni.Mobile.ViewModels"
     Title="{Binding Title}">
 
@@ -39,11 +39,11 @@
                 Padding="30,24,30,24"
                 Orientation="Vertical"
                 Spacing="10">
-                <Label FontSize="{StaticResource HeadLine}" Text="{helpers:Translate About_Title}" />
+                <Label FontSize="{StaticResource HeadLine}" Text="{extensions:Translate About_Title}" />
                 <Label
                     Padding="0,0,0,0"
                     FontSize="{StaticResource BodyText}"
-                    Text="{helpers:Translate About_Description}" />
+                    Text="{extensions:Translate About_Description}" />
                 <Label Text="FontAwesome Icons:" />
                 <Label FontFamily="FAS" Text="{x:Static FontAwesome:FontAwesomeIcons.Check}" />
                 <Label FontFamily="FAS" Text="{x:Static FontAwesome:FontAwesomeIcons.AddressCard}" />
@@ -51,7 +51,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="{helpers:Translate About_LearnAt}" />
+                                <Span Text="{extensions:Translate About_LearnAt}" />
                                 <Span FontAttributes="Bold" Text="https://aka.ms/xamarin-quickstart" />
                             </FormattedString.Spans>
                         </FormattedString>
@@ -62,7 +62,7 @@
                     BackgroundColor="{AppThemeBinding Light={StaticResource BackGroundLightTheme},
                                                       Dark={StaticResource BackGroundDarkTheme}}"
                     Command="{Binding OpenWebCommand}"
-                    Text="{helpers:Translate About_LearnMore}"
+                    Text="{extensions:Translate About_LearnMore}"
                     TextColor="{AppThemeBinding Light={StaticResource TextLightTheme},
                                                 Dark={StaticResource TextDarkTheme}}" />
             </StackLayout>

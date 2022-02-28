@@ -1,4 +1,5 @@
-﻿using Erni.Mobile.Models;
+﻿using Erni.Mobile.Extensions;
+using Erni.Mobile.Models;
 using Erni.Mobile.Resources;
 using System.ComponentModel;
 using System.Globalization;

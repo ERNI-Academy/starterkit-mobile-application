@@ -3,16 +3,16 @@
     x:Class="Erni.Mobile.Views.NewItemPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:helpers="clr-namespace:Erni.Mobile.Helpers"
+    xmlns:extensions="clr-namespace:Erni.Mobile.Extensions"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-    Title="{helpers:Translate NewItem_Title}"
+    Title="{extensions:Translate NewItem_Title}"
     ios:Page.UseSafeArea="true"
     Shell.PresentationMode="ModalAnimated">
     <ContentPage.Content>
         <StackLayout Padding="15" Spacing="3">
-            <Label FontSize="{StaticResource BodyText}" Text="{helpers:Translate NewItem_Text}" />
+            <Label FontSize="{StaticResource BodyText}" Text="{extensions:Translate NewItem_Text}" />
             <Entry FontSize="{StaticResource BodyText}" Text="{Binding Text, Mode=TwoWay}" />
-            <Label FontSize="{StaticResource BodyText}" Text="{helpers:Translate NewItem_Description}" />
+            <Label FontSize="{StaticResource BodyText}" Text="{extensions:Translate NewItem_Description}" />
             <Editor
                 Margin="0"
                 AutoSize="TextChanges"
@@ -22,11 +22,11 @@
                 <Button
                     Command="{Binding CancelCommand}"
                     HorizontalOptions="FillAndExpand"
-                    Text="{helpers:Translate NewItem_Cancel}" />
+                    Text="{extensions:Translate NewItem_Cancel}" />
                 <Button
                     Command="{Binding SaveCommand}"
                     HorizontalOptions="FillAndExpand"
-                    Text="{helpers:Translate NewItem_Save}" />
+                    Text="{extensions:Translate NewItem_Save}" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

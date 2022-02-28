@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Xamarin.Forms.Xaml;
 using Xamarin.Forms;
+using Erni.Mobile.Helpers;
 
-namespace Erni.Mobile.Helpers
+namespace Erni.Mobile.Extensions
 {
     [ContentProperty("Text")]
     public class TranslateExtension : IMarkupExtension<BindingBase>

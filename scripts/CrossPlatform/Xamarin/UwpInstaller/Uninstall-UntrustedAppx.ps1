@@ -11,7 +11,6 @@ if($RunAsAdmin){
     exit 0
 }
 else{
-
     $base = @();
     $packageName | ForEach-Object{$base += $base = (Get-AppxPackage -Name "*$_*").PackageFullName;};
     $base;

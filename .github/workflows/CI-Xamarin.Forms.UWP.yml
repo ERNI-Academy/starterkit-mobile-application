@@ -30,4 +30,3 @@ jobs:
       
     - name: Build
       run: msbuild src\CrossPlatform\Xamarin\Erni.Mobile.UWP\Erni.Mobile.UWP.csproj /p:Configuration=Debug /t:Rebuild     
-      

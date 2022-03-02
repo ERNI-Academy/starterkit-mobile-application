@@ -32,6 +32,10 @@
             Icon="icon_about.svg">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
+        <Tab Title="{helpers:Translate AppShell_Browse}"
+            Icon="browse.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
+        </Tab>
         <Tab Title="{helpers:Translate AppShell_Language}"
             Icon="language.svg">
             <ShellContent ContentTemplate="{DataTemplate local:ChangeLanguagePage}" />

@@ -1,0 +1,21 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Erni.Mobile.MAUI.Views.ChangeLanguagePage"
+             xmlns:helpers="clr-namespace:Erni.Mobile.MAUI.Helpers">
+    <ContentPage.Content>
+        <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
+            <Label Text="{helpers:Translate SelectLanguage, StringFormat='{0}:'}" />
+            <Picker
+                    x:Name="picker"
+                    ItemDisplayBinding="{Binding Name}"
+                    ItemsSource="{Binding Languages}"
+                    SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}" />
+
+            <Button
+                    BackgroundColor="Black"
+                    Command="{Binding ChangeLanguageCommand, Mode=OneTime}"
+                    Text="{helpers:Translate Save}"
+                    TextColor="White" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

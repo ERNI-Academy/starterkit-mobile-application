@@ -1,20 +1,13 @@
-﻿namespace Erni.Mobile.MAUI;
+﻿using Erni.Mobile.MAUI.Views;
 
-public partial class MainPage : ContentPage
+namespace Erni.Mobile.MAUI;
+
+public partial class MainPage : Shell
 {
-	int count = 0;
-
 	public MainPage()
 	{
 		InitializeComponent();
-	}
-
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
-		CounterLabel.Text = $"Current count: {count}";
-
-		SemanticScreenReader.Announce(CounterLabel.Text);
+		Routing.RegisterRoute(nameof(ChangeLanguagePage), typeof(ChangeLanguagePage));
 	}
 }
 

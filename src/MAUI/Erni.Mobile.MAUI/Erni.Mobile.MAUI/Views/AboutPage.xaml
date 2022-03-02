@@ -5,7 +5,7 @@
              xmlns:helpers="clr-namespace:Erni.Mobile.MAUI.Helpers"
              xmlns:FontAwesome="clr-namespace:Erni.Mobile.MAUI.Helpers.Fonts"
              xmlns:vm="clr-namespace:Erni.Mobile.MAUI.ViewModels"
-             Title="{Binding Title}">
+             Title="{helpers:Translate AppShell_About}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -23,7 +23,7 @@
                 <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
                     <Image
                         HeightRequest="64"
-                        Source="ErniLogo.png"
+                        Source="ernilogo.svg"
                         VerticalOptions="Center" />
                 </ContentView>
             </StackLayout>

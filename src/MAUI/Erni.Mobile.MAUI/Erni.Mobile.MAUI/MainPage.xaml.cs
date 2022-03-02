@@ -7,7 +7,8 @@ public partial class MainPage : Shell
 	public MainPage()
 	{
 		InitializeComponent();
-		Routing.RegisterRoute(nameof(ChangeLanguagePage), typeof(ChangeLanguagePage));
+		Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
+		Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
 	}
 }
 

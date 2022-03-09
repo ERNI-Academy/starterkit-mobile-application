@@ -1,4 +1,7 @@
-﻿namespace Erni.Mobile.MAUI;
+﻿using Erni.Mobile.MAUI.Platforms;
+using Erni.Mobile.MAUI.Services;
+
+namespace Erni.Mobile.MAUI;
 
 public static class MauiProgram
 {
@@ -11,6 +14,8 @@ public static class MauiProgram
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 			});
+
+		builder.Services.AddTransient<IConfigurationFileProvider, ConfigurationFileProvider>();
 
 		return builder.Build();
 	}

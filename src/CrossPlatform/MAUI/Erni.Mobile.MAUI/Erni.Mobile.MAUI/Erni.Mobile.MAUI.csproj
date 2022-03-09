@@ -53,7 +53,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="appsettings.json" />
 	  <None Remove="Resources\language.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiAsset Include="appsettings.json" />
 	</ItemGroup>
 
 	<ItemGroup>

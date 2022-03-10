@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Erni.Mobile.MAUI.Views.AboutPage"
-             xmlns:helpers="clr-namespace:Erni.Mobile.MAUI.Helpers"
+             xmlns:extensions="clr-namespace:Erni.Mobile.MAUI.Extensions"
              xmlns:FontAwesome="clr-namespace:Erni.Mobile.MAUI.Helpers.Fonts"
              xmlns:vm="clr-namespace:Erni.Mobile.MAUI.ViewModels"
-             Title="{helpers:Translate AppShell_About}">
+             Title="{extensions:Translate AppShell_About}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -33,11 +33,11 @@
                 Padding="30,24,30,24"
                 Orientation="Vertical"
                 Spacing="10">
-                <Label FontSize="{StaticResource HeadLine}" Text="{helpers:Translate About_Title}" />
+                <Label FontSize="{StaticResource HeadLine}" Text="{extensions:Translate About_Title}" />
                 <Label
                     Padding="0,0,0,0"
                     FontSize="{StaticResource BodyText}"
-                    Text="{helpers:Translate About_Description}" />
+                    Text="{extensions:Translate About_Description}" />
                 <Label Text="FontAwesome Icons:" />
                 <Label FontFamily="FAS" Text="{x:Static FontAwesome:FontAwesomeIcons.Check}" />
                 <Label FontFamily="FAS" Text="{x:Static FontAwesome:FontAwesomeIcons.AddressCard}" />
@@ -45,7 +45,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="{helpers:Translate About_LearnAt}" />
+                                <Span Text="{extensions:Translate About_LearnAt}" />
                                 <Span FontAttributes="Bold" Text="https://aka.ms/xamarin-quickstart" />
                             </FormattedString.Spans>
                         </FormattedString>
@@ -56,7 +56,7 @@
                     BackgroundColor="{AppThemeBinding Light={StaticResource BackGroundLightTheme},
                                                       Dark={StaticResource BackGroundDarkTheme}}"
                     Command="{Binding OpenWebCommand}"
-                    Text="{helpers:Translate About_LearnMore}"
+                    Text="{extensions:Translate About_LearnMore}"
                     TextColor="{AppThemeBinding Light={StaticResource TextLightTheme},
                                                 Dark={StaticResource TextDarkTheme}}" />
             </StackLayout>

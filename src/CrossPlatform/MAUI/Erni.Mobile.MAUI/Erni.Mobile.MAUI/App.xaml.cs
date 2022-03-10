@@ -9,8 +9,13 @@ public partial class App : Application
     public App()
     {
         InitializeComponent();
-        LocalizationResourceManager.Instance.SetCulture(CultureInfo.GetCultureInfo("en")).GetAwaiter().GetResult();
+        InitializeLanguage();
         DependencyService.Register<MockDataStore>();
         MainPage = new MainPage();
+    }
+
+    private static void InitializeLanguage()
+    {
+        LocalizationResourceManager.Instance.SetCulture(CultureInfo.GetCultureInfo("en")).GetAwaiter().GetResult();
     }
 }

@@ -1,4 +1,6 @@
-﻿using System.Diagnostics;
+﻿using Erni.Mobile.MAUI.Services.Configuration;
+using Erni.Mobile.MAUI.Services.Logging;
+using System.Diagnostics;
 
 namespace Erni.Mobile.MAUI.ViewModels
 {
@@ -8,6 +10,12 @@ namespace Erni.Mobile.MAUI.ViewModels
         private string itemId;
         private string text;
         private string description;
+
+        public ItemDetailViewModel(ILoggingService loggingService, IApplicationSettingsService applicationSettingsService) 
+            : base(loggingService, applicationSettingsService)
+        {
+        }
+
         public string Id { get; set; }
 
         public string Text

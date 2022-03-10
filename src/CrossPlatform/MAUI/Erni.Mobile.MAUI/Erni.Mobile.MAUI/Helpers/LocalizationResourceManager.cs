@@ -1,4 +1,5 @@
-﻿using Erni.Mobile.MAUI.Resources;
+﻿using Erni.Mobile.MAUI.Extensions;
+using Erni.Mobile.MAUI.Resources;
 using System.ComponentModel;
 using System.Globalization;
 using System.Reflection;

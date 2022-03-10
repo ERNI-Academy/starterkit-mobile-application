@@ -1,5 +1,7 @@
 ﻿using Erni.Mobile.MAUI.Models;
 using Erni.Mobile.MAUI.Services;
+using Erni.Mobile.MAUI.Services.Configuration;
+using Erni.Mobile.MAUI.Services.Logging;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
@@ -8,6 +10,15 @@ namespace Erni.Mobile.MAUI.ViewModels
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        
+        public readonly ILoggingService LoggingService;
+        public readonly IApplicationSettingsService ApplicationSettingsService;
+
+        public BaseViewModel(ILoggingService loggingService, IApplicationSettingsService applicationSettingsService)
+        {
+            this.LoggingService = loggingService;
+            this.ApplicationSettingsService = applicationSettingsService;
+        }
 
         bool isBusy = false;
         public bool IsBusy

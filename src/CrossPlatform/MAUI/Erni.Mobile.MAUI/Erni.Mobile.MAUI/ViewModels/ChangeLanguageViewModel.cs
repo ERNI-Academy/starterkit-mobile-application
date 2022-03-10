@@ -1,6 +1,8 @@
 ﻿using Erni.Mobile.MAUI.Helpers;
 using Erni.Mobile.MAUI.Models;
 using Erni.Mobile.MAUI.Resources;
+using Erni.Mobile.MAUI.Services.Configuration;
+using Erni.Mobile.MAUI.Services.Logging;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Globalization;
@@ -16,7 +18,8 @@ namespace Erni.Mobile.MAUI.ViewModels
 
         public ICommand ChangeLanguageCommand { get; set; }
 
-        public ChangeLanguageViewModel()
+        public ChangeLanguageViewModel(ILoggingService loggingService, IApplicationSettingsService applicationSettingsService)
+            : base(loggingService, applicationSettingsService)
         {
             LoadLanguage();
             ChangeLanguageCommand = new Command(async () =>

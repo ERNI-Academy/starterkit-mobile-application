@@ -1,4 +1,6 @@
-﻿namespace Erni.Mobile.MAUI.Helpers
+﻿using Erni.Mobile.MAUI.Helpers;
+
+namespace Erni.Mobile.MAUI.Extensions
 {
     [ContentProperty("Text")]
     internal class TranslateExtension : IMarkupExtension<BindingBase>

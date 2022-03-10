@@ -1,4 +1,6 @@
 ﻿using Erni.Mobile.MAUI.Models;
+using Erni.Mobile.MAUI.Services.Configuration;
+using Erni.Mobile.MAUI.Services.Logging;
 using Erni.Mobile.MAUI.Views;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -14,7 +16,8 @@ namespace Erni.Mobile.MAUI.ViewModels
         public Command AddItemCommand { get; }
         public Command<Item> ItemTapped { get; }
 
-        public ItemsViewModel()
+        public ItemsViewModel(ILoggingService loggingService, IApplicationSettingsService applicationSettingsService)
+            : base(loggingService, applicationSettingsService)
         {
             Title = "Browse";
             //Items = new ObservableCollection<Item>();

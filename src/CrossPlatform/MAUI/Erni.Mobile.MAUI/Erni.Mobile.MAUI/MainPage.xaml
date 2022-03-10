@@ -1,7 +1,7 @@
 <Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        x:Class="Erni.Mobile.MAUI.MainPage"
-       xmlns:helpers="clr-namespace:Erni.Mobile.MAUI.Helpers"
+       xmlns:extensions="clr-namespace:Erni.Mobile.MAUI.Extensions"
        xmlns:local="clr-namespace:Erni.Mobile.MAUI.Views"
        Title="MainPage">
 
@@ -28,15 +28,15 @@
     </Shell.Resources>
     
     <TabBar>
-        <Tab Title="{helpers:Translate AppShell_About}"
+        <Tab Title="{extensions:Translate AppShell_About}"
             Icon="icon_about.svg">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
-        <Tab Title="{helpers:Translate AppShell_Browse}"
+        <Tab Title="{extensions:Translate AppShell_Browse}"
             Icon="browse.svg">
             <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
         </Tab>
-        <Tab Title="{helpers:Translate AppShell_Language}"
+        <Tab Title="{extensions:Translate AppShell_Language}"
             Icon="language.svg">
             <ShellContent ContentTemplate="{DataTemplate local:ChangeLanguagePage}" />
         </Tab>

@@ -2,15 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Erni.Mobile.MAUI.Views.NewItemPage"
-             xmlns:helpers="clr-namespace:Erni.Mobile.MAUI.Helpers"
+             xmlns:extensions="clr-namespace:Erni.Mobile.MAUI.Extensions"
              
-             Title="{helpers:Translate NewItem_Title}"
+             Title="{extensions:Translate NewItem_Title}"
              Shell.PresentationMode="ModalAnimated">
     <ContentPage.Content>
         <StackLayout Padding="15" Spacing="3">
-            <Label FontSize="{StaticResource BodyText}" Text="{helpers:Translate NewItem_Text}" />
+            <Label FontSize="{StaticResource BodyText}" Text="{extensions:Translate NewItem_Text}" />
             <Entry FontSize="{StaticResource BodyText}" Text="{Binding Text, Mode=TwoWay}" />
-            <Label FontSize="{StaticResource BodyText}" Text="{helpers:Translate NewItem_Description}" />
+            <Label FontSize="{StaticResource BodyText}" Text="{extensions:Translate NewItem_Description}" />
             <Editor
                 Margin="0"
                 AutoSize="TextChanges"
@@ -20,11 +20,11 @@
                 <Button
                     Command="{Binding CancelCommand}"
                     HorizontalOptions="FillAndExpand"
-                    Text="{helpers:Translate NewItem_Cancel}" />
+                    Text="{extensions:Translate NewItem_Cancel}" />
                 <Button
                     Command="{Binding SaveCommand}"
                     HorizontalOptions="FillAndExpand"
-                    Text="{helpers:Translate NewItem_Save}" />
+                    Text="{extensions:Translate NewItem_Save}" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

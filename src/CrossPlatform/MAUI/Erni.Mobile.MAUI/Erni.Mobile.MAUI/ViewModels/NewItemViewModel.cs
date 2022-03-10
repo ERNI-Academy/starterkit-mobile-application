@@ -1,4 +1,6 @@
 ﻿using Erni.Mobile.MAUI.Models;
+using Erni.Mobile.MAUI.Services.Configuration;
+using Erni.Mobile.MAUI.Services.Logging;
 
 namespace Erni.Mobile.MAUI.ViewModels
 {
@@ -7,7 +9,8 @@ namespace Erni.Mobile.MAUI.ViewModels
         private string text;
         private string description;
 
-        public NewItemViewModel()
+        public NewItemViewModel(ILoggingService loggingService, IApplicationSettingsService applicationSettingsService)
+            : base(loggingService, applicationSettingsService)
         {
             SaveCommand = new Command(OnSave, ValidateSave);
             CancelCommand = new Command(OnCancel);

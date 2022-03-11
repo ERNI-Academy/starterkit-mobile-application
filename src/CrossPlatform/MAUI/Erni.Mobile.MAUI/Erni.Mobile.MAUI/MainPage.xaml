@@ -29,15 +29,15 @@
     
     <TabBar>
         <Tab Title="{extensions:Translate AppShell_About}"
-            Icon="icon_about.svg">
+            Icon="icon_about.png">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
         <Tab Title="{extensions:Translate AppShell_Browse}"
-            Icon="browse.svg">
+            Icon="browse.png">
             <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
         </Tab>
         <Tab Title="{extensions:Translate AppShell_Language}"
-            Icon="language.svg">
+            Icon="language.png">
             <ShellContent ContentTemplate="{DataTemplate local:ChangeLanguagePage}" />
         </Tab>
     </TabBar>

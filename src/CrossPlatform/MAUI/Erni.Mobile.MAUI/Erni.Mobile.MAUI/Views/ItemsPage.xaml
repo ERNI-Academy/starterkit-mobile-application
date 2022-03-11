@@ -9,7 +9,8 @@
              Title="{Binding Title}">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Command="{Binding AddItemCommand}" Text="{extensions:Translate Item_Add}" />
+        <ToolbarItem Command="{Binding AddItemCommand}" Text="{extensions:Translate Item_Add}"
+                     Order="Primary"/>
     </ContentPage.ToolbarItems>
 
     <CollectionView

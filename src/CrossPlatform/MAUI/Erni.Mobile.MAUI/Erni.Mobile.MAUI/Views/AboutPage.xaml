@@ -16,15 +16,12 @@
                                               Dark={StaticResource AccentDarkTheme}}"
             HorizontalOptions="Fill"
             VerticalOptions="FillAndExpand">
-            <StackLayout
-                HorizontalOptions="Center"
-                Orientation="Horizontal"
-                VerticalOptions="Center">
-                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+            <StackLayout>
+                <ContentView Padding="0,40,0,20" HorizontalOptions="Center">
                     <Image
                         HeightRequest="64"
-                        Source="ernilogo.svg"
-                        VerticalOptions="Center" />
+                        Source="ernilogo.png"
+                        VerticalOptions="Start" />
                 </ContentView>
             </StackLayout>
         </StackLayout>
@@ -38,7 +35,7 @@
                     Padding="0,0,0,0"
                     FontSize="{StaticResource BodyText}"
                     Text="{extensions:Translate About_Description}" />
-                <Label Text="FontAwesome Icons:" />
+                <Label Text="FontAwesome Icons:" />                
                 <Label FontFamily="FAS" Text="{x:Static FontAwesome:FontAwesomeIcons.Check}" />
                 <Label FontFamily="FAS" Text="{x:Static FontAwesome:FontAwesomeIcons.AddressCard}" />
                 <Label Padding="0,24,0,0" FontSize="{StaticResource BodyText}">

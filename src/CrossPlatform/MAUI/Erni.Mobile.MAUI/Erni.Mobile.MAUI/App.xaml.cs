@@ -18,4 +18,15 @@ public partial class App : Application
     {
         LocalizationResourceManager.Instance.SetCulture(CultureInfo.GetCultureInfo("en")).GetAwaiter().GetResult();
     }
+
+    protected override Window CreateWindow(IActivationState activationState)
+    {
+        // Workaround for: 'Either set MainPage or override CreateWindow.'??
+        if (this.MainPage == null)
+        {
+            this.MainPage = new MainPage();
+        }
+
+        return base.CreateWindow(activationState);
+    }
 }

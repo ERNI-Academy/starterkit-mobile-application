@@ -20,14 +20,12 @@ namespace Erni.Mobile.MAUI.ViewModels
             : base(loggingService, applicationSettingsService)
         {
             Title = "Browse";
-            //Items = new ObservableCollection<Item>();
+
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
             ItemTapped = new Command<Item>(OnItemSelected);
 
             AddItemCommand = new Command(OnAddItem);
-
-
         }
 
         async Task ExecuteLoadItemsCommand()

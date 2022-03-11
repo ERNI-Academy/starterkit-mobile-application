@@ -24,9 +24,12 @@ namespace Erni.Mobile.MAUI.ViewModels
             LoadLanguage();
             ChangeLanguageCommand = new Command(async () =>
             {
-                await LocalizationResourceManager.Instance.SetCulture(CultureInfo.GetCultureInfo(SelectedLanguage.CI));
-                LoadLanguage();
-                await App.Current.MainPage.DisplayAlert(AppResources.LanguageChanged, "", AppResources.Done);
+                if (SelectedLanguage != null)
+                {
+                    await LocalizationResourceManager.Instance.SetCulture(CultureInfo.GetCultureInfo(SelectedLanguage.CI));
+                    LoadLanguage();
+                    await App.Current.MainPage.DisplayAlert(AppResources.LanguageChanged, "", AppResources.Done);
+                }
             });
 
         }

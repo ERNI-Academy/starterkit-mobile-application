@@ -1,5 +1,4 @@
-﻿using Erni.Mobile.MAUI.Services;
-using Erni.Mobile.MAUI.Views;
+﻿using Erni.Mobile.MAUI.Views;
 
 namespace Erni.Mobile.MAUI;
 

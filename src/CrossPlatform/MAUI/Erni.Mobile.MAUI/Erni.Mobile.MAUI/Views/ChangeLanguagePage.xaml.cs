@@ -1,4 +1,3 @@
-using Erni.Mobile.MAUI.Services;
 using Erni.Mobile.MAUI.Services.Configuration;
 using Erni.Mobile.MAUI.Services.Logging;
 using Erni.Mobile.MAUI.ViewModels;

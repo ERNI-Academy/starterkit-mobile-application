@@ -1,5 +1,4 @@
 ﻿using Erni.Mobile.MAUI.Services.Configuration;
-using Foundation;
 
 namespace Erni.Mobile.MAUI.Platforms
 {
@@ -7,7 +6,7 @@ namespace Erni.Mobile.MAUI.Platforms
     {
         public Stream GetConfigurationStream()
         {
-            return File.OpenRead(NSBundle.MainBundle.PathForResource("appsettings.json", null));
+            return FileSystem.OpenAppPackageFileAsync("appsettings.json").GetAwaiter().GetResult();
         }
     }
 }

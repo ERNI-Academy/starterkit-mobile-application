@@ -8,11 +8,11 @@ namespace Erni.Mobile.MAUI.Services.Configuration
 
         public SettingsService(IConfigurationFileProvider configurationFileProvider)
         {
-            //using (var reader = new StreamReader(configurationFileProvider.GetConfigurationStream()))
-            //{
-            //    var json = reader.ReadToEnd();
-            //    _settings = JObject.Parse(json);
-            //}
+            using (var reader = new StreamReader(configurationFileProvider.GetConfigurationStream()))
+            {
+                var json = reader.ReadToEnd();
+                _settings = JObject.Parse(json);
+            }
         }
 
         public T GetSetting<T>(string key)

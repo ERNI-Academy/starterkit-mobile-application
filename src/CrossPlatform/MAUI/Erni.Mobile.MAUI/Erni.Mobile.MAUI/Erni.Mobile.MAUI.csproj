@@ -57,14 +57,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="appsettings.json" />
 	  <None Remove="Resources\Fonts\GlyphIcons.woff" />
 	  <None Remove="Resources\Images\ic_launcher.png" />
 	  <None Remove="Resources\language.svg" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiAsset Include="appsettings.json" />
+	  <None Remove="Resources\Raw\appsettings.json" />
 	</ItemGroup>
 
 	<ItemGroup>

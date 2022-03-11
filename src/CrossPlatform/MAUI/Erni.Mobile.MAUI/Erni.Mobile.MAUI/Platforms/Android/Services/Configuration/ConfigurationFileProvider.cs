@@ -6,7 +6,7 @@ namespace Erni.Mobile.MAUI.Platforms
     {
         public Stream GetConfigurationStream()
         {
-            return Android.App.Application.Context.Assets.Open("appsettings.json");
+            return FileSystem.OpenAppPackageFileAsync("appsettings.json").GetAwaiter().GetResult();
         }
     }
 }

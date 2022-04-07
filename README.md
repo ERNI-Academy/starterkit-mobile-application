@@ -78,8 +78,16 @@ Please see our [Code of Conduct](CODE_OF_CONDUCT.md)
 
 <img src="https://repobeats.axiom.co/api/embed/3a01b2a95bfa6e13f36e86951a68c3b7da140d0c.svg" />
 
-**Contact:**
-Erni_Services  - [@ERNI](https://twitter.com/ERNI) - esp-services@betterask.erni
+## Follow us
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/ERNI?style=social)](https://www.twitter.com/ERNI)
+[![Twitch Status](https://img.shields.io/twitch/status/erni_academy?label=Twitch%20Erni%20Academy&style=social)](https://www.twitch.tv/erni_academy)
+[![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCkdDcxjml85-Ydn7Dc577WQ?label=Youtube%20Erni%20Academy&style=social)](https://www.youtube.com/channel/UCkdDcxjml85-Ydn7Dc577WQ)
+[![Linkedin](https://img.shields.io/badge/linkedin-31k-green?style=social&logo=Linkedin)](https://www.linkedin.com/company/erni)
+
+## Contact 
+
+📧 esp-services@betterask.erni
 
 ## Contributors ✨
 

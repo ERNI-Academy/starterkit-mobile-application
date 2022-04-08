@@ -8,7 +8,8 @@ ERNI Academy mobile boilerplate to start a cross-platform or native mobile appli
 [![Build Xamarin.Forms.Android app](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.Android.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.Android.yml)
 [![Build Xamarin.Forms.iOS app](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.iOS.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.iOS.yml)
 [![Build Xamarin.Forms.UWP app](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.UWP.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.UWP.yml)
-## Getting Started ##
+
+## Getting Started
 
 * CrossPlatform
   * Maui:
@@ -68,7 +69,8 @@ Please see our [Contribution Guide](CONTRIBUTING.md) to learn how to contribute.
 
 ## License
 
-[MIT](LICENSE) © 2022 [ERNI - Swiss Software Engineering](https://www.betterask.erni)
+![MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+(LICENSE) © 2022 [ERNI - Swiss Software Engineering](https://www.betterask.erni)
 
 ## Code of conduct
 
@@ -76,7 +78,7 @@ Please see our [Code of Conduct](CODE_OF_CONDUCT.md)
 
 ## Stats
 
-<img src="https://repobeats.axiom.co/api/embed/3a01b2a95bfa6e13f36e86951a68c3b7da140d0c.svg" />
+![https://repobeats.axiom.co/api/embed/3a01b2a95bfa6e13f36e86951a68c3b7da140d0c.svg](https://repobeats.axiom.co/api/embed/3a01b2a95bfa6e13f36e86951a68c3b7da140d0c.svg)
 
 ## Follow us
 
@@ -85,7 +87,7 @@ Please see our [Code of Conduct](CODE_OF_CONDUCT.md)
 [![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCkdDcxjml85-Ydn7Dc577WQ?label=Youtube%20Erni%20Academy&style=social)](https://www.youtube.com/channel/UCkdDcxjml85-Ydn7Dc577WQ)
 [![Linkedin](https://img.shields.io/badge/linkedin-31k-green?style=social&logo=Linkedin)](https://www.linkedin.com/company/erni)
 
-## Contact 
+## Contact
 
 📧 esp-services@betterask.erni
 

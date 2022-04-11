@@ -28,6 +28,23 @@
         "example",
         "review"
       ]
+    },
+    {
+      "login": "davidwalker2235",
+      "name": "davidwalker2235",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14020687?v=4",
+      "profile": "https://github.com/davidwalker2235",
+      "contributions": [
+        "code",
+        "content",
+        "doc",
+        "design",
+        "ideas",
+        "maintenance",
+        "test",
+        "example",
+        "review"
+      ]
     }
   ]
 }

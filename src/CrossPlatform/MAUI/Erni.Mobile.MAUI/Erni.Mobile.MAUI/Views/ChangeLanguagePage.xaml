@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout Padding="20" VerticalOptions="Center" HorizontalOptions="Center">
             <Label Text="{extensions:Translate SelectLanguage, StringFormat='{0}:'}"
-                   Margin="10 0" />
+                   Margin="10,0" />
             <Picker
                     x:Name="picker"
                     ItemDisplayBinding="{Binding Name}"
@@ -19,7 +19,7 @@
                     Text="{extensions:Translate Save}"
                     TextColor="White"
                     MinimumWidthRequest="100"
-                    Margin="10 0"/>
+                    Margin="10,0"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

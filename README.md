@@ -2,7 +2,7 @@
 
 ERNI Academy mobile boilerplate to start a cross-platform or native mobile application.
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Build Xamarin.Forms.Android app](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.Android.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.Android.yml)
@@ -101,6 +101,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/Rabosa616"><img src="https://avatars.githubusercontent.com/u/12774781?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rabosa616</b></sub></a><br /><a href="https://github.com/ERNI-Academy/starterkit-mobile-application/commits?author=Rabosa616" title="Code">💻</a> <a href="#content-Rabosa616" title="Content">🖋</a> <a href="https://github.com/ERNI-Academy/starterkit-mobile-application/commits?author=Rabosa616" title="Documentation">📖</a> <a href="#design-Rabosa616" title="Design">🎨</a> <a href="#ideas-Rabosa616" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-Rabosa616" title="Maintenance">🚧</a> <a href="https://github.com/ERNI-Academy/starterkit-mobile-application/commits?author=Rabosa616" title="Tests">⚠️</a> <a href="#example-Rabosa616" title="Examples">💡</a> <a href="https://github.com/ERNI-Academy/starterkit-mobile-application/pulls?q=is%3Apr+reviewed-by%3ARabosa616" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://github.com/Robertcs8"><img src="https://avatars.githubusercontent.com/u/100421143?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Robertcs8</b></sub></a><br /><a href="https://github.com/ERNI-Academy/starterkit-mobile-application/commits?author=Robertcs8" title="Code">💻</a> <a href="#content-Robertcs8" title="Content">🖋</a> <a href="https://github.com/ERNI-Academy/starterkit-mobile-application/commits?author=Robertcs8" title="Documentation">📖</a> <a href="#design-Robertcs8" title="Design">🎨</a> <a href="#ideas-Robertcs8" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-Robertcs8" title="Maintenance">🚧</a> <a href="https://github.com/ERNI-Academy/starterkit-mobile-application/commits?author=Robertcs8" title="Tests">⚠️</a> <a href="#example-Robertcs8" title="Examples">💡</a> <a href="https://github.com/ERNI-Academy/starterkit-mobile-application/pulls?q=is%3Apr+reviewed-by%3ARobertcs8" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 

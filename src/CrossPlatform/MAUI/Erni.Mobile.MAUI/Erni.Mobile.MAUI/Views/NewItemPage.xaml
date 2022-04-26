@@ -19,12 +19,12 @@
                     Command="{Binding CancelCommand}"
                     HorizontalOptions="FillAndExpand"
                     Text="{extensions:Translate NewItem_Cancel}"
-                    Margin="0,10,0,0"/>
+                    Margin="5,10,5,0"/>
                 <Button
                     Command="{Binding SaveCommand}"
                     HorizontalOptions="FillAndExpand"
                     Text="{extensions:Translate NewItem_Save}"
-                    Margin="0,0,0,10" />
+                    Margin="5,10,10,0" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

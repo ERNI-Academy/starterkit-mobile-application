@@ -1,5 +1,6 @@
 ﻿using Erni.Mobile.MAUI.Services.Configuration;
 using Erni.Mobile.MAUI.Services.Logging;
+using System.Windows.Input;
 
 namespace Erni.Mobile.MAUI.ViewModels
 {
@@ -9,6 +10,9 @@ namespace Erni.Mobile.MAUI.ViewModels
             : base(loggingService, applicationSettingsService)
         {
             Title = "About";
+            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://dotnet.microsoft.com/en-us/apps/maui"));
         }
+
+        public ICommand OpenWebCommand { get; }
     }
 }

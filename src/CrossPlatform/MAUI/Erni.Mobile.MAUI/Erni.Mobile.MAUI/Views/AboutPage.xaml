@@ -38,16 +38,6 @@
                 <Label Text="FontAwesome Icons:" />                
                 <Label FontFamily="FAS" Text="{x:Static FontAwesome:FontAwesomeIcons.Check}" />
                 <Label FontFamily="FAS" Text="{x:Static FontAwesome:FontAwesomeIcons.AddressCard}" />
-                <Label Padding="0,24,0,0" FontSize="{StaticResource BodyText}">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="{extensions:Translate About_LearnAt}" />
-                                <Span FontAttributes="Bold" Text="https://aka.ms/xamarin-quickstart" />
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
                 <Button
                     Margin="0,10,0,0"
                     BackgroundColor="{AppThemeBinding Light={StaticResource BackGroundLightTheme},

@@ -1,4 +1,4 @@
-name: Build Xamarin.Forms.UWP app
+name: Build MAUI app
 
 on:
   pull_request:  

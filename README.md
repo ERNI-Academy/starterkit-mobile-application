@@ -54,11 +54,11 @@ Follow the Get started documentation on how to install all required tools for ea
 ## Usage Instructions
 
 * CrossPlatform
-  * [Maui](./docs/crossplatform/maui/README.md)
-  * [Xamarin](./docs/crossplatform/xamarin/README.md)
-  * [Flutter](./docs/crossplatform/flutter/README.md)
-  * [React Native](./docs/crossplatform/reactnative/README.md)
-  * [Ionic](./docs/crossplatform/ionic/README.md)
+  * [Maui](./docs/CrossPlatform/Maui/README.md)
+  * [Xamarin](./docs/CrossPlatform/Xamarin/README.md)
+  * [Flutter](./docs/CrossPlatform/flutter/README.md)
+  * [React Native](./docs/CrossPlatform/reactnative/README.md)
+  * [Ionic](./docs/CrossPlatform/ionic/README.md)
 * Native
   * [Android](./docs/native/android/README.md)
   * [iOS](./docs/native/ios/README.md)

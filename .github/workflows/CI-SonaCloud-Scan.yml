@@ -1,10 +1,17 @@
 name: Sonar Cloud Scan
 
 on:
-  pull_request:  
   push:
     branches:
       - main
+
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_call:
+    secrets:
+        SONAR_TOKEN:
+          required: true
+  workflow_dispatch: ~
       
 jobs:
   build:

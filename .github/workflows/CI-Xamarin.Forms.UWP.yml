@@ -26,7 +26,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.2
 
     - name: Install dependencies
-      run: nuget restore Erni.Mobile.sln
+      run: nuget restore src\CrossPlatform\Xamarin\Erni.Mobile.UWP\Erni.Mobile.UWP.csproj
       
     - name: Build
       run: msbuild src\CrossPlatform\Xamarin\Erni.Mobile.UWP\Erni.Mobile.UWP.csproj /p:Configuration=Debug /t:Rebuild     

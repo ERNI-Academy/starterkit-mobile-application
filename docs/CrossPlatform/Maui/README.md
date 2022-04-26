@@ -4,7 +4,7 @@ ERNI Academy mobile boilerplate to start a MAUI forms mobile application.
 
 ## Getting Started
 
-This boilerplate uses the well-known [MVVM pattern](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/enterprise-application-patterns/mvvm) and is based on a [Xamarin Forms Shell](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/shell/) application.
+This boilerplate uses the well-known [MVVM pattern](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/enterprise-application-patterns/mvvm) and is based on a [MAUI Forms Shell](https://docs.microsoft.com/en-us/dotnet/maui/fundamentals/shell/) application.
 
 The application is multilanguage so just add a new file AppResources.(TWO ISO LANGUAGE LETTER).resx with the language and then
 add the following code in the header of the XAML

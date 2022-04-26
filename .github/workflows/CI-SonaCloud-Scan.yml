@@ -2,10 +2,7 @@ name: Sonar Cloud Scan
 
 on:
   workflow_run:
-    workflows: 
-      - CI-Xamarin.Forms.Android
-      - CI-Xamarin.Forms.iOS
-      - CI-Xamarin.Forms.UWP
+    workflows: ["Build Xamarin.Forms.Android app", "Build Xamarin.Forms.iOS app", "Build Xamarin.Forms.UWP app"]
     types:
       - completed
       

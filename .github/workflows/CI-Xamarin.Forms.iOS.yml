@@ -1,5 +1,4 @@
 name: Build Xamarin.Forms.iOS app
-
 on:
   pull_request:  
   push:
@@ -8,7 +7,6 @@ on:
 
 jobs:
   build:
-
     runs-on: macos-latest
 
     steps:

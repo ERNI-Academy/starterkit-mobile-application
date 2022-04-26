@@ -1,16 +1,16 @@
 name: Sonar Cloud Scan
 
 on:
-  pull_request:  
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: [CI-Xamarin.Forms.Android, CI-Xamarin.Forms.iOS, CI-Xamarin.Forms.UWP]
+    types: [completed]
 
 jobs:
   build:
     runs-on: macos-latest
+    if: github.event.workflow_run.conclusion == 'success'
     env:
-      SONAR_SCANNER_VERSION: 4.4.0.2170
+      SONAR_SCANNER_VERSION: 4.7.0.2747
       SONAR_SERVER_URL: "https://sonarcloud.io"
 
     steps:
@@ -21,6 +21,10 @@ jobs:
           
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        repository: ${{ github.event.workflow_run.head_repository.full_name }}
+        ref: ${{ github.event.workflow_run.head_branch }}
+        fetch-depth: 0
 
     - name: Setup .NET Core SDK 5.0.x
       uses: actions/setup-dotnet@v1

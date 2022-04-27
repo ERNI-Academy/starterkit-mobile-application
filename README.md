@@ -9,6 +9,10 @@ ERNI Academy mobile boilerplate to start a cross-platform or native mobile appli
 [![Build Xamarin.Forms.iOS app](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.iOS.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.iOS.yml)
 [![Build Xamarin.Forms.UWP app](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.UWP.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.UWP.yml)
 
+[![Build MAUI app](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-MAUI.yml/badge.svg)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-MAUI.yml)
+
+[![Sonar Cloud Scan](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-SonaCloud-Scan.yml/badge.svg)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-SonaCloud-Scan.yml)
+
 ## Getting Started
 
 * CrossPlatform

@@ -67,7 +67,7 @@ jobs:
         run: nuget restore ./src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj -Recursive
 
       - name: Build MAUI Windows
-        run: msbuild src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj /p:Configuration=Release /t:Rebuild /p:TargetFramework=net6.0-windows10.0.19041.0
+        run: msbuild src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj /p:Configuration=Release /t:Rebuild /p:TargetFramework=net6.0-windows10.0.19041
 
 # MAUI iOS Build
   build-ios:

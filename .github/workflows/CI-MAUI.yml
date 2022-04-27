@@ -65,7 +65,7 @@ jobs:
         run: |
           dotnet workload install maui --ignore-failed-sources --include-previews
       - name: Restore Dependencies
-        run: nuget restore ./src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj -Recursive
+        run: dotnet restore ./src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj -Recursive
 
       - name: Build MAUI Windows
         run: msbuild src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj /p:Configuration=Release /t:Rebuild /p:TargetFramework=net6.0-windows10.0.19041.0

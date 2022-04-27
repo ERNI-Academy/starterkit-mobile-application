@@ -41,34 +41,39 @@ jobs:
       - name: Build MAUI Android
         run: dotnet build ./src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj -c Release -f net6.0-android --no-restore
 
-# MAUI Windows Build
-  build-windows:
-    runs-on: windows-2022
-    name: Windows Build
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+# # MAUI Windows Build
+  # build-windows:
+    # runs-on: windows-2022
+    # name: Windows Build
+    # steps:
+      # - name: Checkout
+        # uses: actions/checkout@v3
 
-      - name: Setup .NET 6
-        uses: actions/setup-dotnet@v2
-        with:
-          dotnet-version: |
-            6.0.300-preview.22204.3
-          include-prerelease: true
-          
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v1.1
-        with:
-          vs-prerelease: true
+      # - name: Setup .NET 6
+        # uses: actions/setup-dotnet@v2
+        # with:
+          # dotnet-version: 6.0.x
+          # include-prerelease: true
+
+      # - name: Setup .NET Core SDK
+        # uses: actions/setup-dotnet@v1
+        # with:
+            # dotnet-version: |
+        # 6.0.300-preview.22204.3
+
+      # - name: Setup MSBuild
+        # uses: microsoft/setup-msbuild@v1.1
+        # with:
+          # vs-prerelease: true
         
-      - name: Install MAUI Workloads
-        run: |
-          dotnet workload install maui --ignore-failed-sources --include-previews
-      - name: Restore Dependencies
-        run: dotnet restore ./src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj
+      # - name: Install MAUI Workloads
+        # run: |
+          # dotnet workload install maui --ignore-failed-sources --include-previews
+      # - name: Restore Dependencies
+        # run: nuget restore ./src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj -Recursive
 
-      - name: Build MAUI Windows
-        run: msbuild src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj /p:Configuration=Release /t:Rebuild /p:TargetFramework=net6.0-windows10.0.19041.0
+      # - name: Build MAUI Windows
+        # run: msbuild src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj /p:Configuration=Release /t:Rebuild /p:TargetFramework=net6.0-windows10.0.19041.0
 
 # MAUI iOS Build
   build-ios:

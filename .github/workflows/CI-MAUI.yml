@@ -62,7 +62,7 @@ jobs:
         
       - name: Install MAUI Workloads
         run: |
-          dotnet workload install maui --ignore-failed-sources
+          dotnet workload install maui --ignore-failed-sources --include-previews
       - name: Restore Dependencies
         run: nuget restore ./src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj -Recursive
 

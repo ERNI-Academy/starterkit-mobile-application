@@ -7,7 +7,7 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="27CE4634-4D04-43D6-A3B3-88B98954D41F"
+    Name="Erni.Mobile.MAUI"
     Publisher="CN=User Name"
     Version="1.0.0.0" />
 

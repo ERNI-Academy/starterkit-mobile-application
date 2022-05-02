@@ -13,7 +13,7 @@
 		<ApplicationTitle>Erni.Mobile.MAUI</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.erni.mobile.maui</ApplicationId>
+		<ApplicationId>com.erni.mobile.maui</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationVersion>1</ApplicationVersion>

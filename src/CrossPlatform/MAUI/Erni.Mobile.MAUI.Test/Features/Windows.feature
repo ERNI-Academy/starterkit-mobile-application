@@ -2,8 +2,7 @@
 @ErniMobileMAUI
 Feature: WindowsTests
 
-Scenario: Testing winindows login
-	Given the first number is 50
-	And the second number is 70
-	When the two numbers are added
-	Then the result should be 120
+Scenario: Testing windows language refresh
+	Given the user navigates to 'Language' page
+	When user updates language to 'Spanish'
+	Then language updated popup appears

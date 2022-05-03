@@ -12,14 +12,16 @@
                     ItemDisplayBinding="{Binding Name}"
                     ItemsSource="{Binding Languages}"
                     SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}"
-                    MinimumWidthRequest="100"/>
+                    MinimumWidthRequest="100"
+                    AutomationId="ChangeLanguagePage_LanguagePicker"/>
             <Button
                     BackgroundColor="Black"
                     Command="{Binding ChangeLanguageCommand, Mode=OneTime}"
                     Text="{extensions:Translate Save}"
                     TextColor="White"
                     MinimumWidthRequest="100"
-                    Margin="10,0"/>
+                    Margin="10,0"
+                    AutomationId="ChangeLanguagePage_SaveButton"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

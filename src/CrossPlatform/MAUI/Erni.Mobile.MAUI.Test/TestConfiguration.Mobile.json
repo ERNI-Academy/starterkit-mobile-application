@@ -93,9 +93,8 @@
 
         {
           "Name": "ErniMobileMAUI",
-          "ApplicationPath": "C:\\Repos\\starterkit-mobile-application\\src\\CrossPlatform\\MAUI\\Erni.Mobile.MAUI\\bin\\Release\\net6.0-windows10.0.19041.0\\win10-x64\\Erni.Mobile.MAUI.exe",
-          "ApplicationName": "Erni.Mobile.MAUI",
-          "ApplicationClassName": "Erni.Mobile.MAUI",
+          "ApplicationId": "Erni.Mobile.MAUI_9zz4h110yvjzm!App",
+          "ApplicationName": "MainPage",
           "WinAppDriverUrl": "http://127.0.0.1:4723/wd/hub",
           "CommandTimeOutInMinutes": 5
         }

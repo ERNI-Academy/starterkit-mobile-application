@@ -52,7 +52,14 @@ namespace Erni.Mobile.MAUI.Helpers
 
         public void Invalidate()
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(null));
+            try
+            {
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(null));
+            }
+            catch (Exception ex)
+            {
+                //Ignore exception
+            }
         }
     }
 }

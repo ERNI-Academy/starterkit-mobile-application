@@ -9,12 +9,11 @@ namespace Erni.Mobile.MAUI.Services.Logging
 {
     public class AppCenterLoggingService : ILoggingService
     {
-        public AppCenterLoggingService()
+        public AppCenterLoggingService(IApplicationSettingsService applicationSettingsService)
         {
-            var applicationSettingsService = DependencyService.Get<IApplicationSettingsService>();
             AppCenter.LogLevel = applicationSettingsService.AppCenterLogLevel;
             AppCenter.Start(
-                $"ios={applicationSettingsService.AppCenterKeyForIOS}​;android={applicationSettingsService.AppCenterKeyForAndroid}",
+                GetAppSecrets(applicationSettingsService),
                 typeof(Analytics),
                 typeof(Crashes),
                 typeof(Distribute));
@@ -49,6 +48,13 @@ namespace Erni.Mobile.MAUI.Services.Logging
         public void Error(Exception exception)
         {
             Crashes.TrackError(exception);
+        }
+
+        private static string GetAppSecrets(IApplicationSettingsService applicationSettingsService)
+        {
+            return $"ios={applicationSettingsService.AppCenterKeyForIOS}​;" +
+                   $"android={applicationSettingsService.AppCenterKeyForAndroid};" +
+                   $"UWP={applicationSettingsService.AppCenterKeyForUWP}";
         }
     }
 }

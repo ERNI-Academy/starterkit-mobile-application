@@ -11,6 +11,7 @@ namespace Erni.Mobile.MAUI.Services.Configuration
         string AppCenterKeyForIOS { get; }
 
         string AppCenterKeyForAndroid { get; }
+        string AppCenterKeyForUWP { get; }
 
         string IosKeychainSecurityGroups { get; }
 

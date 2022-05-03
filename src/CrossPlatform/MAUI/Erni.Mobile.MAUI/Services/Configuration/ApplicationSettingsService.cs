@@ -15,6 +15,7 @@ namespace Erni.Mobile.MAUI.Services.Configuration
         public string AppCenterKeyForIOS => GetSetting<string>("AppCenter.Keys.iOS");
 
         public string AppCenterKeyForAndroid => GetSetting<string>("AppCenter.Keys.Android");
+        public string AppCenterKeyForUWP => GetSetting<string>("AppCenter.Keys.UWP");
 
         public LogLevel AppCenterLogLevel => GetLogLevel();
 

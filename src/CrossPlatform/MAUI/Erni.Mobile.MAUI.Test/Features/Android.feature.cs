@@ -20,7 +20,7 @@ namespace Erni.Mobile.MAUI.Test.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class LanguageTestFeature
+    public partial class AndroidTestFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -28,9 +28,10 @@ namespace Erni.Mobile.MAUI.Test.Features
         private Microsoft.VisualStudio.TestTools.UnitTesting.TestContext _testContext;
         
         private string[] _featureTags = new string[] {
-                "Appiumdriver"};
+                "Appiumdriver",
+                "ErniMobileMAUI"};
         
-#line 1 "Calculator.feature"
+#line 1 "Android.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -49,8 +50,9 @@ namespace Erni.Mobile.MAUI.Test.Features
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "LanguageTest", null, ProgrammingLanguage.CSharp, new string[] {
-                        "Appiumdriver"});
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "AndroidTest", null, ProgrammingLanguage.CSharp, new string[] {
+                        "Appiumdriver",
+                        "ErniMobileMAUI"});
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -65,9 +67,9 @@ namespace Erni.Mobile.MAUI.Test.Features
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "LanguageTest")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "AndroidTest")))
             {
-                global::Erni.Mobile.MAUI.Test.Features.LanguageTestFeature.FeatureSetup(null);
+                global::Erni.Mobile.MAUI.Test.Features.AndroidTestFeature.FeatureSetup(null);
             }
         }
         
@@ -94,16 +96,15 @@ namespace Erni.Mobile.MAUI.Test.Features
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Add two numbers")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "LanguageTest")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Testing android language refresh")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "AndroidTest")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Appiumdriver")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
-        public virtual void AddTwoNumbers()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("ErniMobileMAUI")]
+        public virtual void TestingAndroidLanguageRefresh()
         {
-            string[] tagsOfScenario = new string[] {
-                    "mytag"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Testing android language refresh", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -125,16 +126,13 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 6
- testRunner.Given("the first number is 50", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("the user navigates to \'Language\' page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
- testRunner.And("the second number is 70", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("user updates language to \'Spanish\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
- testRunner.When("the two numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 9
- testRunner.Then("the result should be 120", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("language updated popup appears", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

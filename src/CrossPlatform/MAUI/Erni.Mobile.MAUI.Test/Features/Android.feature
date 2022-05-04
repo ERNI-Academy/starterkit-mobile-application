@@ -1,5 +1,6 @@
 ﻿@Appiumdriver
 @ErniMobileMAUI
+@AndroidDriver
 Feature: AndroidTest
 
 Scenario: Testing android language refresh

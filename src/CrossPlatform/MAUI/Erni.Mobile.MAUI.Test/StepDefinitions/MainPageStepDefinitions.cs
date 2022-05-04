@@ -10,7 +10,7 @@ namespace Erni.Mobile.MAUI.Test.StepDefinitions
 
         public MainPageStepDefinitions()
         {
-            this.mainPage = ContainerManager.GetTestWareComponent<IMainPage>();
+            this.mainPage = ContainerManager.GetTestWareComponent<IMainPage>();            
         }
 
         [Given(@"the user navigates to '([^']*)' page")]

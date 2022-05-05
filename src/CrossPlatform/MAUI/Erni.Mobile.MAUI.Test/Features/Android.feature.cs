@@ -29,7 +29,6 @@ namespace Erni.Mobile.MAUI.Test.Features
         
         private string[] _featureTags = new string[] {
                 "Appiumdriver",
-                "ErniMobileMAUI",
                 "AndroidDriver"};
         
 #line 1 "Android.feature"
@@ -53,7 +52,6 @@ namespace Erni.Mobile.MAUI.Test.Features
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "AndroidTest", null, ProgrammingLanguage.CSharp, new string[] {
                         "Appiumdriver",
-                        "ErniMobileMAUI",
                         "AndroidDriver"});
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -101,14 +99,13 @@ namespace Erni.Mobile.MAUI.Test.Features
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Testing android language refresh")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "AndroidTest")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Appiumdriver")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("ErniMobileMAUI")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("AndroidDriver")]
         public virtual void TestingAndroidLanguageRefresh()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Testing android language refresh", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 6
+#line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -128,13 +125,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
+#line 6
  testRunner.Given("the user navigates to \'Language\' page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 8
+#line 7
  testRunner.When("user updates language to \'Spanish\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 9
+#line 8
  testRunner.Then("language updated popup appears", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

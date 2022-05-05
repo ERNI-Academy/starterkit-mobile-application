@@ -1,11 +1,12 @@
-﻿using OpenQA.Selenium;
+﻿using Erni.Mobile.MAUI.Test.POM.MainPage.Interfaces;
+using OpenQA.Selenium;
 using TestWare.Engines.Appium.Extras;
 using TestWare.Engines.Appium.Factory;
 using TestWare.Engines.Appium.Pages;
 
 namespace Erni.Mobile.MAUI.Test.POM.MainPage
 {
-    internal class AndroidMainPage : MobilePage, IMainPage
+    internal class AndroidMainPage : MobilePage, IAndroidMainPage
     {
 #nullable enable
         [FindsBy(How = How.AccessibilityId, Using = "About")]

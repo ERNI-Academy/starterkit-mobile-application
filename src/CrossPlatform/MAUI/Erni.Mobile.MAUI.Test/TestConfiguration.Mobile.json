@@ -7,7 +7,7 @@
           "Name": "AndroidDriver",
           "AppiumUrl": "http://127.0.0.1:4725/wd/hub",
           "ApkUrl": "https://github.com/saucelabs/sample-app-mobile/releases/download/2.7.1/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk",
-          "AppPath": "D:\\Projects\\ERNI\\academy\\StarterKitMobileApplication\\src\\CrossPlatform\\Maui\\Erni.Mobile.MAUI\\bin\\Release\\net6.0-android\\com.erni.mobile.maui-Signed.apk",
+          "AppPath": "C:\\Repos\\starterkit-mobile-application\\src\\CrossPlatform\\MAUI\\Erni.Mobile.MAUI\\bin\\Release\\net6.0-android\\com.erni.mobile.maui-Signed.apk",
           "CommandTimeOutInMinutes": 5,
           "DeviceName": "pixel_5_-_api_30",
           "PlatformName": "Android",

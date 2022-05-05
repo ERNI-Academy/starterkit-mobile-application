@@ -1,4 +1,4 @@
-using Erni.Mobile.MAUI.Test.POM.LanguagePage;
+using Erni.Mobile.MAUI.Test.POM.LanguagePage.Interfaces;
 using TestWare.Core;
 
 namespace Erni.Mobile.MAUI.Test.StepDefinitions
@@ -8,9 +8,28 @@ namespace Erni.Mobile.MAUI.Test.StepDefinitions
     {
         private readonly ILanguagePage languagePage;
 
-        public LanguagePageStepDefinitions()
+        public LanguagePageStepDefinitions(FeatureContext featureContext, ScenarioContext scenarioContext)
         {
-            this.languagePage = ContainerManager.GetTestWareComponent<ILanguagePage>();
+            var tags = featureContext.FeatureInfo.Tags.Concat(scenarioContext.ScenarioInfo.Tags).Select(x => x.ToLower());
+            var winAppDriver = TestWare.Engines.Appium.WinAppDriver.Factory.ConfigurationTags.winappdriver.ToString();
+            var appium = TestWare.Engines.Appium.Factory.ConfigurationTags.appiumdriver.ToString();
+
+            if (tags.Any(item => item == winAppDriver))
+            {
+                this.languagePage = ContainerManager.GetTestWareComponent<IWindowsLanguagePage>();
+            }
+            else if (tags.Any(item => item == appium) && tags.Any(item => item == "androiddriver"))
+            {
+                this.languagePage = ContainerManager.GetTestWareComponent<IAndroidLanguagePage>();
+            }
+            else if (tags.Any(item => item == appium) && tags.Any(item => item == "iosdriver"))
+            {
+                this.languagePage = ContainerManager.GetTestWareComponent<IIOsLanguagePage>();
+            }
+            else
+            {
+                throw new Exception(" No Page has been resolved");
+            }
         }
 
         [When(@"user updates language to '([^']*)'")]

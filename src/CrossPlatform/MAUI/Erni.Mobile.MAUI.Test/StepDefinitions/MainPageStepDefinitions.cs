@@ -1,4 +1,4 @@
-using Erni.Mobile.MAUI.Test.POM.MainPage;
+using Erni.Mobile.MAUI.Test.POM.MainPage.Interfaces;
 using TestWare.Core;
 
 namespace Erni.Mobile.MAUI.Test.StepDefinitions
@@ -8,9 +8,28 @@ namespace Erni.Mobile.MAUI.Test.StepDefinitions
     {
         private readonly IMainPage mainPage;
 
-        public MainPageStepDefinitions()
+        public MainPageStepDefinitions(FeatureContext featureContext, ScenarioContext scenarioContext)
         {
-            this.mainPage = ContainerManager.GetTestWareComponent<IMainPage>();            
+            var tags = featureContext.FeatureInfo.Tags.Concat(scenarioContext.ScenarioInfo.Tags).Select(x => x.ToLower());
+            var winAppDriver = TestWare.Engines.Appium.WinAppDriver.Factory.ConfigurationTags.winappdriver.ToString();
+            var appium = TestWare.Engines.Appium.Factory.ConfigurationTags.appiumdriver.ToString();
+
+            if (tags.Any(item => item == winAppDriver))
+            {
+                this.mainPage = ContainerManager.GetTestWareComponent<IWindowsMainPage>();
+            }
+            else if (tags.Any(item => item == appium) && tags.Any(item => item == "androiddriver"))
+            {
+                this.mainPage = ContainerManager.GetTestWareComponent<IAndroidMainPage>();
+            }
+            else if (tags.Any(item => item == appium) && tags.Any(item => item == "iosdriver"))
+            {
+                this.mainPage = ContainerManager.GetTestWareComponent<IIOsMainPage>();
+            }
+            else
+            {
+                throw new Exception(" No Page has been resolved");
+            }      
         }
 
         [Given(@"the user navigates to '([^']*)' page")]

@@ -1,5 +1,4 @@
 ﻿@Appiumdriver
-@ErniMobileMAUI
 @AndroidDriver
 Feature: AndroidTest
 

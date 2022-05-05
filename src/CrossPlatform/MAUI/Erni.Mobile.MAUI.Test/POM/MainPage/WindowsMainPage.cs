@@ -1,11 +1,12 @@
-﻿using OpenQA.Selenium;
+﻿using Erni.Mobile.MAUI.Test.POM.MainPage.Interfaces;
+using OpenQA.Selenium;
 using TestWare.Engines.Appium.Extras;
 using TestWare.Engines.Appium.WinAppDriver.Factory;
 using TestWare.Engines.Appium.WinAppDriver.Pages;
 
 namespace Erni.Mobile.MAUI.Test.POM.MainPage
 {
-    internal class MainPage : WinAppDriverPage, IMainPage
+    internal class WindowsMainPage : WinAppDriverPage, IWindowsMainPage
     {
 #nullable enable
         [FindsBy(How = How.Name, Using = "About")]
@@ -18,7 +19,7 @@ namespace Erni.Mobile.MAUI.Test.POM.MainPage
         private IWebElement LanguageTab { get; set; }
 #nullable disable
 
-        public MainPage(IWindowsDriver driver) : base(driver)
+        public WindowsMainPage(IWindowsDriver driver) : base(driver)
         {
         }
 

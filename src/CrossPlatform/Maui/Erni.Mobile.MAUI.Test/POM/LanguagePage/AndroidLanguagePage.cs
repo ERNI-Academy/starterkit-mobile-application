@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Erni.Mobile.MAUI.Test.POM.LanguagePage.Interfaces;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
 using TestWare.Engines.Appium.Extras;
 using TestWare.Engines.Appium.Factory;
@@ -6,7 +7,7 @@ using TestWare.Engines.Appium.Pages;
 
 namespace Erni.Mobile.MAUI.Test.POM.LanguagePage
 {
-    internal class AndroidLanguagePage : MobilePage, ILanguagePage
+    internal class AndroidLanguagePage : MobilePage, IAndroidLanguagePage
     {
 #nullable enable
         [FindsBy(How = How.AccessibilityId, Using = "ChangeLanguagePage_SaveButton")]

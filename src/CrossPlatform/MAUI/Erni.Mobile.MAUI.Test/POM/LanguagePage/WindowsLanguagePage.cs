@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Erni.Mobile.MAUI.Test.POM.LanguagePage.Interfaces;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
 using TestWare.Engines.Appium.Extras;
 using TestWare.Engines.Appium.WinAppDriver.Factory;
@@ -6,7 +7,7 @@ using TestWare.Engines.Appium.WinAppDriver.Pages;
 
 namespace Erni.Mobile.MAUI.Test.POM.LanguagePage
 {
-    internal class LanguagePage : WinAppDriverPage, ILanguagePage
+    internal class WindowsLanguagePage : WinAppDriverPage, ILanguagePage
     {
 #nullable enable
         [FindsBy(How = How.AccessibilityId, Using = "ChangeLanguagePage_SaveButton")]
@@ -19,7 +20,7 @@ namespace Erni.Mobile.MAUI.Test.POM.LanguagePage
         private IWebElement PopupConfirmButton { get; set; }
 #nullable disable
 
-        public LanguagePage(IWindowsDriver driver) : base(driver)
+        public WindowsLanguagePage(IWindowsDriver driver) : base(driver)
         {
         }
 

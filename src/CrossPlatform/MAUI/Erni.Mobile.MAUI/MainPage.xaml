@@ -1,0 +1,47 @@
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="Erni.Mobile.MAUI.MainPage"
+       xmlns:extensions="clr-namespace:Erni.Mobile.MAUI.Extensions"
+       xmlns:local="clr-namespace:Erni.Mobile.MAUI.Views"
+       Title="MainPage">
+
+    <!--
+        The overall app visual hierarchy is defined here, along with navigation.
+    -->
+    
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light={StaticResource BackGroundLightTheme}, Dark={StaticResource BackGroundDarkTheme}}" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="{AppThemeBinding Light={StaticResource TextLightTheme}, Dark={StaticResource TextDarkTheme}}" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Light={StaticResource BackGroundLightTheme}, Dark={StaticResource BackGroundDarkTheme}}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="White" />
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarTitleColor" Value="{AppThemeBinding Light={StaticResource TextLightTheme}, Dark={StaticResource TextDarkTheme}}" />
+            </Style>
+            <Style BasedOn="{StaticResource BaseStyle}" TargetType="TabBar" />
+            <Style BasedOn="{StaticResource BaseStyle}" TargetType="FlyoutItem" />
+        </ResourceDictionary>
+    </Shell.Resources>
+    
+    <TabBar>
+        <Tab Title="{extensions:Translate AppShell_About}"
+            Icon="icon_about.png"
+             AutomationId="MainPage_AboutTab">
+            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+        </Tab>
+        <Tab Title="{extensions:Translate AppShell_Browse}"
+            Icon="browse.png"
+             AutomationId="MainPage_BrowseTab">
+            <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
+        </Tab>
+        <Tab Title="{extensions:Translate AppShell_Language}"
+            Icon="language.png"
+             AutomationId="MainPage_LanguageTab">
+            <ShellContent ContentTemplate="{DataTemplate local:ChangeLanguagePage}" />
+        </Tab>
+    </TabBar>
+</Shell>

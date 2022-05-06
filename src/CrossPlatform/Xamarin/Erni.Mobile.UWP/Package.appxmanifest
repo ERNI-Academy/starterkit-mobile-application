@@ -7,7 +7,7 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="4E777D80-69D8-418F-9E85-BB566FB103DE"
+    Name="Erni.Mobile.UWP"
     Publisher="CN=227D9323-E5CD-4852-BDA5-4BD41A63CC96"
     Version="1.0.0.0" />
 

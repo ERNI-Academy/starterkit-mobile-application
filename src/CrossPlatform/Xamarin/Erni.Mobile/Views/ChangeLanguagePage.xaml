@@ -11,13 +11,14 @@
                 x:Name="picker"
                 ItemDisplayBinding="{Binding Name}"
                 ItemsSource="{Binding Languages}"
-                SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}" />
-
+                SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}"
+                AutomationId="ChangeLanguagePage_LanguagePicker"/>
             <Button
                 BackgroundColor="Black"
                 Command="{Binding ChangeLangugeCommand, Mode=OneTime}"
                 Text="{extensions:Translate Save}"
-                TextColor="White" />
+                TextColor="White" 
+                AutomationId="ChangeLanguagePage_SaveButton"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

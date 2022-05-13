@@ -21,7 +21,7 @@
     <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
   </PropertyGroup>
 	<PropertyGroup>
-		<LangVersion>10.0</LangVersion>
+		<LangVersion>latest</LangVersion>
 	</PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>

@@ -18,7 +18,7 @@
     -->
     <RefreshView
         x:DataType="local:ItemsViewModel"
-        Command="{Binding LoadItemsCommand}"
+        Command="{Binding ExecuteLoadItemsCommand}"
         IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
         <CollectionView
             x:Name="ItemsListView"

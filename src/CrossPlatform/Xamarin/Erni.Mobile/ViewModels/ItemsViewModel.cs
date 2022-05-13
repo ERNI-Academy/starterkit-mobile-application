@@ -1,4 +1,6 @@
-﻿using Erni.Mobile.Models;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using Erni.Mobile.Models;
 using Erni.Mobile.Views;
 using System;
 using System.Collections.ObjectModel;
@@ -8,27 +10,43 @@ using Xamarin.Forms;
 
 namespace Erni.Mobile.ViewModels
 {
-    public class ItemsViewModel : BaseViewModel
+    public partial class ItemsViewModel : BaseViewModel
     {
+        [ObservableProperty]
         private Item _selectedItem;
 
         public ObservableCollection<Item> Items { get; }
-        public Command LoadItemsCommand { get; }
-        public Command AddItemCommand { get; }
         public Command<Item> ItemTapped { get; }
 
         public ItemsViewModel()
         {
             Title = "Browse";
             Items = new ObservableCollection<Item>();
-            LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
-            ItemTapped = new Command<Item>(OnItemSelected);
-
-            AddItemCommand = new Command(OnAddItem);
+            ItemTapped = new Command<Item>(async (value) => await OnItemSelected(value).ConfigureAwait(false));
         }
 
-        async Task ExecuteLoadItemsCommand()
+        [ICommand]
+        async Task ExecuteLoadItems()
+        {
+            await GetLoadItems().ConfigureAwait(false);
+        }
+
+        [ICommand]
+        public async Task AddItem()
+        {
+            await Shell.Current.GoToAsync(nameof(NewItemPage));
+        }
+
+        public void OnAppearing()
+        {
+            IsBusy = true;
+            SelectedItem = null;
+
+            GetLoadItems().GetAwaiter().GetResult();
+        }
+
+        async Task GetLoadItems()
         {
             IsBusy = true;
 
@@ -51,28 +69,7 @@ namespace Erni.Mobile.ViewModels
             }
         }
 
-        public void OnAppearing()
-        {
-            IsBusy = true;
-            SelectedItem = null;
-        }
-
-        public Item SelectedItem
-        {
-            get => _selectedItem;
-            set
-            {
-                SetProperty(ref _selectedItem, value);
-                OnItemSelected(value);
-            }
-        }
-
-        private async void OnAddItem(object obj)
-        {
-            await Shell.Current.GoToAsync(nameof(NewItemPage));
-        }
-
-        async void OnItemSelected(Item item)
+        async Task OnItemSelected(Item item)
         {
             if (item == null)
                 return;

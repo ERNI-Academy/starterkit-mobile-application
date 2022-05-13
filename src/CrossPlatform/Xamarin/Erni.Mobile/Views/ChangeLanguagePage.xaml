@@ -15,7 +15,7 @@
                 AutomationId="ChangeLanguagePage_LanguagePicker"/>
             <Button
                 BackgroundColor="Black"
-                Command="{Binding ChangeLangugeCommand, Mode=OneTime}"
+                Command="{Binding ChangeLanguageCommand, Mode=OneTime}"
                 Text="{extensions:Translate Save}"
                 TextColor="White" 
                 AutomationId="ChangeLanguagePage_SaveButton"/>

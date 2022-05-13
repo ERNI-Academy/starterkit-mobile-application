@@ -38,9 +38,9 @@ public static class MauiProgram
         }
         builder.Services.AddSingleton<AboutPage>();
         builder.Services.AddSingleton<ChangeLanguagePage>();
-        builder.Services.AddSingleton<ItemDetailPage>();
-        builder.Services.AddSingleton<ItemsPage>();
-        builder.Services.AddSingleton<NewItemPage>();
+        builder.Services.AddTransient<ItemDetailPage>();
+        builder.Services.AddTransient<ItemsPage>();
+        builder.Services.AddTransient<NewItemPage>();
         return builder.Build();
     }
 }

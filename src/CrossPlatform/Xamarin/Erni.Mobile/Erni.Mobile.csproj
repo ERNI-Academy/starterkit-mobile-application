@@ -4,7 +4,11 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
   </PropertyGroup>
-
+	
+	<PropertyGroup>
+		<LangVersion>10.0</LangVersion>
+	</PropertyGroup>
+	
   <ItemGroup>
     <EmbeddedResource Include="..\Erni.Mobile.Resources\Fonts\fa-brands-400.ttf" Link="Resources\Fonts\fa-brands-400.ttf" />
     <EmbeddedResource Include="..\Erni.Mobile.Resources\Fonts\fa-regular-400.ttf" Link="Resources\Fonts\fa-regular-400.ttf" />
@@ -13,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0-preview3" />
     <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.0" />
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.0" />
     <PackageReference Include="Microsoft.AppCenter.Distribute" Version="4.5.0" />

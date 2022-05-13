@@ -2,31 +2,22 @@
 using Erni.Mobile.Models;
 using Erni.Mobile.Resources;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
-using Xamarin.Forms;
+using CommunityToolkit.Mvvm.Input;
 
 namespace Erni.Mobile.ViewModels
 {
-    public class ChangeLanguageViewModel : BaseViewModel
+    public partial class ChangeLanguageViewModel : BaseViewModel
     {
         public ObservableCollection<Language> Languages { get; set; }
         public Language SelectedLanguage { get; set; }
 
-        public ICommand ChangeLangugeCommand { get; set; }
-
         public ChangeLanguageViewModel()
         {
             LoadLanguage();
-            ChangeLangugeCommand = new Command(async () =>
-            {
-                await LocalizationResourceManager.Instance.SetCulture(CultureInfo.GetCultureInfo(SelectedLanguage.CI));
-                LoadLanguage();
-                await App.Current.MainPage.DisplayAlert(AppResources.LanguageChanged, "", AppResources.Done);
-            });
-
         }
 
         void LoadLanguage()
@@ -43,6 +34,12 @@ namespace Erni.Mobile.ViewModels
             SelectedLanguage = Languages.FirstOrDefault(pro => pro.CI == LocalizationResourceManager.Instance.CurrentCulture.ThreeLetterISOLanguageName);
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        [ICommand]
+        private async Task ChangeLanguage()
+        {
+            await LocalizationResourceManager.Instance.SetCulture(CultureInfo.GetCultureInfo(SelectedLanguage.CI));
+            LoadLanguage();
+            await App.Current.MainPage.DisplayAlert(AppResources.LanguageChanged, "", AppResources.Done);
+        }
     }
 }

@@ -57,6 +57,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0-preview3" />
 	  <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.0" />
 	  <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.0" />
 	  <PackageReference Include="Microsoft.AppCenter.Distribute" Version="4.5.0" />

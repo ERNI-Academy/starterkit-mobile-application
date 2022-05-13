@@ -26,14 +26,14 @@ namespace Erni.Mobile.MAUI.ViewModels
 
         partial void OnItemIdChanged(string value)
         {
-            LoadItem(value).GetAwaiter().GetResult();
+            LoadItem(value);
         }
 
-        private async Task LoadItem(string itemId)
+        private void LoadItem(string itemId)
         {
             try
             {
-                var item = await DataStore.GetItemAsync(itemId);
+                var item = DataStore.GetItemAsync(itemId).GetAwaiter().GetResult();
                 Id = item.Id;
                 Text = item.Text;
                 Description = item.Description;

@@ -18,6 +18,8 @@
 		<!-- Versions -->
 		<ApplicationVersion>1</ApplicationVersion>
 		
+		<SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>
+		
 		<!-- Required for C# Hot Reload -->
 		<UseInterpreter Condition="'$(Configuration)' == 'Debug'">True</UseInterpreter>
 

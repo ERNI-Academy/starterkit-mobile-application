@@ -61,10 +61,6 @@
 	  <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.0" />
 	  <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.0" />
 	  <PackageReference Include="Microsoft.AppCenter.Distribute" Version="4.5.0" />
-	  <PackageReference Include="Microsoft.Net.Compilers.Toolset" Version="4.3.0-1.final">
-	    <PrivateAssets>all</PrivateAssets>
-	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-	  </PackageReference>
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
 

@@ -97,7 +97,7 @@ jobs:
         run: dotnet restore ./src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj
 
       - name: Build MAUI iOS
-        run: dotnet build ./src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj -c Release -f net6.0-ios --no-restore
+        run: dotnet build ./src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj -c Release -f net6.0-ios -p:EnableAssemblyILStripping=false --no-restore
 
 # MAUI MacCatalyst Build
   build-mac:

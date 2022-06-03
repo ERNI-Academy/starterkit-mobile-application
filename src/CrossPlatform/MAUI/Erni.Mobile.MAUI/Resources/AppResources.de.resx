@@ -141,31 +141,16 @@
   <data name="ChangeLanguage" xml:space="preserve">
     <value>Sprache ändern</value>
   </data>
-  <data name="ChangeLanguage1" xml:space="preserve">
-    <value>Sprache ändern</value>
-  </data>
   <data name="Done" xml:space="preserve">
-    <value>Fertig!</value>
-  </data>
-  <data name="Done1" xml:space="preserve">
     <value>Fertig!</value>
   </data>
   <data name="English" xml:space="preserve">
     <value>Englisch</value>
   </data>
-  <data name="English1" xml:space="preserve">
-    <value>Englisch</value>
-  </data>
   <data name="Filipino" xml:space="preserve">
     <value>Philippinisch</value>
   </data>
-  <data name="Filipino1" xml:space="preserve">
-    <value>Philippinisch</value>
-  </data>
   <data name="German" xml:space="preserve">
-    <value>Deutsch</value>
-  </data>
-  <data name="German1" xml:space="preserve">
     <value>Deutsch</value>
   </data>
   <data name="ItemDetail_Description" xml:space="preserve">
@@ -201,9 +186,6 @@
   <data name="Romanian" xml:space="preserve">
     <value>Rumänisch</value>
   </data>
-  <data name="Romanian1" xml:space="preserve">
-    <value>Rumänisch</value>
-  </data>
   <data name="Save" xml:space="preserve">
     <value>Speichern!</value>
   </data>
@@ -213,13 +195,7 @@
   <data name="Slovak" xml:space="preserve">
     <value>Slovakisch</value>
   </data>
-  <data name="Slovak1" xml:space="preserve">
-    <value>Slovakisch</value>
-  </data>
   <data name="Spanish" xml:space="preserve">
-    <value>Spanisch</value>
-  </data>
-  <data name="Spanish1" xml:space="preserve">
     <value>Spanisch</value>
   </data>
   <data name="WelcomeText" xml:space="preserve">

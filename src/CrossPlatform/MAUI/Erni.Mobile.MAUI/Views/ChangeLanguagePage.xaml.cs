@@ -1,14 +1,12 @@
-using Erni.Mobile.MAUI.Services.Configuration;
-using Erni.Mobile.MAUI.Services.Logging;
 using Erni.Mobile.MAUI.ViewModels;
 
 namespace Erni.Mobile.MAUI.Views;
 
 public partial class ChangeLanguagePage : ContentPage
 {
-	public ChangeLanguagePage(ILoggingService loggingService, IApplicationSettingsService applicationSettingsService)
+	public ChangeLanguagePage(ChangeLanguageViewModel changeLanguageViewModel)
 	{
 		InitializeComponent();
-		BindingContext = new ChangeLanguageViewModel(loggingService, applicationSettingsService);
+		BindingContext = changeLanguageViewModel;
 	}
 }

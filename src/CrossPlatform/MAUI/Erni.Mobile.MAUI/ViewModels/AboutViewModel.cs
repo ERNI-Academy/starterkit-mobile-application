@@ -4,7 +4,7 @@ using System.Windows.Input;
 
 namespace Erni.Mobile.MAUI.ViewModels
 {
-    internal class AboutViewModel : BaseViewModel
+    public partial class AboutViewModel : BaseViewModel
     {
         public AboutViewModel(ILoggingService loggingService, IApplicationSettingsService applicationSettingsService)
             : base(loggingService, applicationSettingsService)

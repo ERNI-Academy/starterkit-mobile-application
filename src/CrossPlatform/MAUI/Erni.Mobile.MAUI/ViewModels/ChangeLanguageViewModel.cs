@@ -10,7 +10,7 @@ using System.Windows.Input;
 
 namespace Erni.Mobile.MAUI.ViewModels
 {
-    internal class ChangeLanguageViewModel : BaseViewModel
+    public partial class ChangeLanguageViewModel : BaseViewModel
     {
         public ObservableCollection<Language> Languages { get; set; }
 

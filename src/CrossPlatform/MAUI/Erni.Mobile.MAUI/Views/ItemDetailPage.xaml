@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Erni.Mobile.MAUI.Views.ItemDetailPage"
              xmlns:extensions="clr-namespace:Erni.Mobile.MAUI.Extensions"
-             Title="ItemDetailPage"
-             BackgroundColor="White">
+             Title="ItemDetailPage">
     <StackLayout Padding="15" Spacing="20">
         <Label FontSize="{StaticResource BodyText}" Text="{extensions:Translate ItemDetail_Text}" />
         <Label FontSize="{StaticResource BodyText}" Text="{Binding Text}" />

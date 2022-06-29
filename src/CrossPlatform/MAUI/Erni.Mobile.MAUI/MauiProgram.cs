@@ -3,6 +3,7 @@ using Erni.Mobile.MAUI.Platforms;
 using Erni.Mobile.MAUI.Services;
 using Erni.Mobile.MAUI.Services.Configuration;
 using Erni.Mobile.MAUI.Services.Logging;
+using Erni.Mobile.MAUI.ViewModels;
 using Erni.Mobile.MAUI.Views;
 
 namespace Erni.Mobile.MAUI;
@@ -37,10 +38,15 @@ public static class MauiProgram
             builder.Services.AddTransient<ILoggingService, AppCenterLoggingService>();
         }
         builder.Services.AddSingleton<AboutPage>();
+        builder.Services.AddSingleton<AboutViewModel>();
         builder.Services.AddSingleton<ChangeLanguagePage>();
+        builder.Services.AddSingleton<ChangeLanguageViewModel>();
         builder.Services.AddTransient<ItemDetailPage>();
+        builder.Services.AddTransient<ItemDetailViewModel>();
         builder.Services.AddTransient<ItemsPage>();
+        builder.Services.AddTransient<ItemsViewModel>();
         builder.Services.AddTransient<NewItemPage>();
+        builder.Services.AddTransient<NewItemViewModel>();
         return builder.Build();
     }
 }

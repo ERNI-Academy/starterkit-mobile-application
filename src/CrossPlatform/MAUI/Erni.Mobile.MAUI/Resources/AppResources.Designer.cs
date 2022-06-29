@@ -142,29 +142,11 @@ namespace Erni.Mobile.MAUI.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Done.
-        /// </summary>
-        internal static string Done1 {
-            get {
-                return ResourceManager.GetString("Done1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to English.
         /// </summary>
         internal static string English {
             get {
                 return ResourceManager.GetString("English", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to English.
-        /// </summary>
-        internal static string English1 {
-            get {
-                return ResourceManager.GetString("English1", resourceCulture);
             }
         }
         
@@ -178,29 +160,11 @@ namespace Erni.Mobile.MAUI.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Filipino.
-        /// </summary>
-        internal static string Filipino1 {
-            get {
-                return ResourceManager.GetString("Filipino1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to German.
         /// </summary>
         internal static string German {
             get {
                 return ResourceManager.GetString("German", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to German.
-        /// </summary>
-        internal static string German1 {
-            get {
-                return ResourceManager.GetString("German1", resourceCulture);
             }
         }
         
@@ -237,15 +201,6 @@ namespace Erni.Mobile.MAUI.Resources {
         internal static string LanguageChanged {
             get {
                 return ResourceManager.GetString("LanguageChanged", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Language Changed.
-        /// </summary>
-        internal static string LanguageChanged1 {
-            get {
-                return ResourceManager.GetString("LanguageChanged1", resourceCulture);
             }
         }
         
@@ -313,15 +268,6 @@ namespace Erni.Mobile.MAUI.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Romanian.
-        /// </summary>
-        internal static string Romanian1 {
-            get {
-                return ResourceManager.GetString("Romanian1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Save.
         /// </summary>
         internal static string Save {
@@ -349,29 +295,11 @@ namespace Erni.Mobile.MAUI.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Slovak.
-        /// </summary>
-        internal static string Slovak1 {
-            get {
-                return ResourceManager.GetString("Slovak1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Spanish.
         /// </summary>
         internal static string Spanish {
             get {
                 return ResourceManager.GetString("Spanish", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Spanish.
-        /// </summary>
-        internal static string Spanish1 {
-            get {
-                return ResourceManager.GetString("Spanish1", resourceCulture);
             }
         }
         

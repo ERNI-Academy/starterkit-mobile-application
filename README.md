@@ -13,6 +13,12 @@ ERNI Academy mobile boilerplate to start a cross-platform or native mobile appli
 
 [![Sonar Cloud Scan](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-SonaCloud-Scan.yml/badge.svg)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-SonaCloud-Scan.yml)
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application)
+
 ## Getting Started
 
 * CrossPlatform

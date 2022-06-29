@@ -74,29 +74,29 @@ jobs:
       - name: Build MAUI Windows
         run: msbuild src/CrossPlatform/MAUI/Erni.Mobile.MAUI/Erni.Mobile.MAUI.csproj /p:Configuration=Release /t:Rebuild /p:TargetFramework=net6.0-windows10.0.19041.0
 
-# maui ios build
-  build-ios:
-    runs-on: macos-11
-    name: ios build
-    steps:
-      - name: checkout
-        uses: actions/checkout@v3
+# # maui ios build
+  # build-ios:
+    # runs-on: macos-11
+    # name: ios build
+    # steps:
+      # - name: checkout
+        # uses: actions/checkout@v3
 
-      - name: setup .net 6
-        uses: actions/setup-dotnet@v2
-        with:
-          dotnet-version: 6.0.x
-          include-prerelease: true
+      # - name: setup .net 6
+        # uses: actions/setup-dotnet@v2
+        # with:
+          # dotnet-version: 6.0.x
+          # include-prerelease: true
 
-      - name: install maui workloads
-        run: |
-          dotnet workload install ios --ignore-failed-sources
-          dotnet workload install maui --ignore-failed-sources
-      - name: restore dependencies
-        run: dotnet restore ./src/crossplatform/maui/erni.mobile.maui/erni.mobile.maui.csproj
+      # - name: install maui workloads
+        # run: |
+          # dotnet workload install ios --ignore-failed-sources
+          # dotnet workload install maui --ignore-failed-sources
+      # - name: restore dependencies
+        # run: dotnet restore ./src/crossplatform/maui/erni.mobile.maui/erni.mobile.maui.csproj
 
-      - name: build maui ios
-        run: dotnet build ./src/crossplatform/maui/erni.mobile.maui/erni.mobile.maui.csproj -c release -f net6.0-ios --no-restore
+      # - name: build maui ios
+        # run: dotnet build ./src/crossplatform/maui/erni.mobile.maui/erni.mobile.maui.csproj -c release -f net6.0-ios --no-restore
 
 # MAUI MacCatalyst Build
   build-mac:

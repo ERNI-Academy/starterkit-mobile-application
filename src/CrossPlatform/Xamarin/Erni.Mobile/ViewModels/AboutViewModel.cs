@@ -1,17 +1,21 @@
-﻿using System.Windows.Input;
+﻿using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Essentials;
-using Xamarin.Forms;
+using CommunityToolkit.Mvvm.Input;
 
 namespace Erni.Mobile.ViewModels
 {
-    public class AboutViewModel : BaseViewModel
+    public partial class AboutViewModel : BaseViewModel
     {
         public AboutViewModel()
         {
             Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
         }
 
-        public ICommand OpenWebCommand { get; }
+        [ICommand]
+        public async Task Browse()
+        {
+            await Browser.OpenAsync("https://aka.ms/xamarin-quickstart");
+        }
     }
 }

@@ -1,47 +1,35 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Erni.Mobile.ViewModels
 {
     [QueryProperty(nameof(ItemId), nameof(ItemId))]
-    public class ItemDetailViewModel : BaseViewModel
+    public partial class ItemDetailViewModel : BaseViewModel
     {
+        [ObservableProperty]
         private string itemId;
+
+        [ObservableProperty]
         private string text;
+
+        [ObservableProperty]
         private string description;
+
         public string Id { get; set; }
 
-        public string Text
+        partial void OnItemIdChanged(string value)
         {
-            get => text;
-            set => SetProperty(ref text, value);
+            LoadItem(value);
         }
 
-        public string Description
-        {
-            get => description;
-            set => SetProperty(ref description, value);
-        }
-
-        public string ItemId
-        {
-            get
-            {
-                return itemId;
-            }
-            set
-            {
-                itemId = value;
-                LoadItemId(value);
-            }
-        }
-
-        public async void LoadItemId(string itemId)
+        private void LoadItem(string itemId)
         {
             try
             {
-                var item = await DataStore.GetItemAsync(itemId);
+                var item = DataStore.GetItemAsync(itemId).GetAwaiter().GetResult();
                 Id = item.Id;
                 Text = item.Text;
                 Description = item.Description;

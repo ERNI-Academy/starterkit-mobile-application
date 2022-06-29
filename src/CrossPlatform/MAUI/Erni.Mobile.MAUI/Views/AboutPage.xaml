@@ -42,7 +42,7 @@
                     Margin="0,10,0,0"
                     BackgroundColor="{AppThemeBinding Light={StaticResource BackGroundLightTheme},
                                                       Dark={StaticResource BackGroundDarkTheme}}"
-                    Command="{Binding OpenWebCommand}"
+                    Command="{Binding BrowseCommand}"
                     Text="{extensions:Translate About_LearnMore}"
                     TextColor="{AppThemeBinding Light={StaticResource TextLightTheme},
                                                 Dark={StaticResource TextDarkTheme}}" />

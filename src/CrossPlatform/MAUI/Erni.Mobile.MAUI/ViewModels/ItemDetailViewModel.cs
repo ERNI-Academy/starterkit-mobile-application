@@ -1,53 +1,39 @@
-﻿using Erni.Mobile.MAUI.Services.Configuration;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Erni.Mobile.MAUI.Services.Configuration;
 using Erni.Mobile.MAUI.Services.Logging;
 using System.Diagnostics;
 
 namespace Erni.Mobile.MAUI.ViewModels
 {
     [QueryProperty(nameof(ItemId), nameof(ItemId))]
-    public class ItemDetailViewModel : BaseViewModel
+    public partial class ItemDetailViewModel : BaseViewModel
     {
+        [ObservableProperty]
         private string itemId;
+
+        [ObservableProperty]
         private string text;
+
+        [ObservableProperty]
         private string description;
 
-        public ItemDetailViewModel(ILoggingService loggingService, IApplicationSettingsService applicationSettingsService) 
+        public ItemDetailViewModel(ILoggingService loggingService, IApplicationSettingsService applicationSettingsService)
             : base(loggingService, applicationSettingsService)
         {
         }
 
         public string Id { get; set; }
 
-        public string Text
+        partial void OnItemIdChanged(string value)
         {
-            get => text;
-            set => SetProperty(ref text, value);
+            LoadItem(value);
         }
 
-        public string Description
-        {
-            get => description;
-            set => SetProperty(ref description, value);
-        }
-
-        public string ItemId
-        {
-            get
-            {
-                return itemId;
-            }
-            set
-            {
-                itemId = value;
-                LoadItemId(value);
-            }
-        }
-
-        public async void LoadItemId(string itemId)
+        private void LoadItem(string itemId)
         {
             try
             {
-                var item = await DataStore.GetItemAsync(itemId);
+                var item = DataStore.GetItemAsync(itemId).GetAwaiter().GetResult();
                 Id = item.Id;
                 Text = item.Text;
                 Description = item.Description;

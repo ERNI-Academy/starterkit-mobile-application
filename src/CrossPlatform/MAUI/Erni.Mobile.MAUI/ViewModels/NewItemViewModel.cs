@@ -1,21 +1,24 @@
-﻿using Erni.Mobile.MAUI.Models;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using Erni.Mobile.MAUI.Models;
 using Erni.Mobile.MAUI.Services.Configuration;
 using Erni.Mobile.MAUI.Services.Logging;
 
 namespace Erni.Mobile.MAUI.ViewModels
 {
-    public class NewItemViewModel : BaseViewModel
+    public partial class NewItemViewModel : BaseViewModel
     {
+        [ObservableProperty]
         private string text;
+
+        [ObservableProperty]
         private string description;
 
         public NewItemViewModel(ILoggingService loggingService, IApplicationSettingsService applicationSettingsService)
             : base(loggingService, applicationSettingsService)
         {
-            SaveCommand = new Command(OnSave, ValidateSave);
-            CancelCommand = new Command(OnCancel);
             this.PropertyChanged +=
-                (_, __) => SaveCommand.ChangeCanExecute();
+                (_, __) => SaveCommand.NotifyCanExecuteChanged();
         }
 
         private bool ValidateSave()
@@ -24,28 +27,15 @@ namespace Erni.Mobile.MAUI.ViewModels
                 && !String.IsNullOrWhiteSpace(description);
         }
 
-        public string Text
-        {
-            get => text;
-            set => SetProperty(ref text, value);
-        }
-
-        public string Description
-        {
-            get => description;
-            set => SetProperty(ref description, value);
-        }
-
-        public Command SaveCommand { get; }
-        public Command CancelCommand { get; }
-
-        private async void OnCancel()
+        [ICommand]
+        private async void Cancel()
         {
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");
         }
 
-        private async void OnSave()
+        [ICommand(CanExecute = nameof(ValidateSave))]
+        private async void Save()
         {
             Item newItem = new Item()
             {

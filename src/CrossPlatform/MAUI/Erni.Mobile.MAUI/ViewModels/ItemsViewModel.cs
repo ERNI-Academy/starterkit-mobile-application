@@ -4,16 +4,17 @@ using Erni.Mobile.MAUI.Services.Logging;
 using Erni.Mobile.MAUI.Views;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 
 namespace Erni.Mobile.MAUI.ViewModels
 {
-    public class ItemsViewModel : BaseViewModel
+    public partial class ItemsViewModel : BaseViewModel
     {
+        [ObservableProperty]
         private Item _selectedItem;
 
         public ObservableCollection<Item> Items { get; } = new ObservableCollection<Item>();
-        public Command LoadItemsCommand { get; }
-        public Command AddItemCommand { get; }
         public Command<Item> ItemTapped { get; }
 
         public ItemsViewModel(ILoggingService loggingService, IApplicationSettingsService applicationSettingsService)
@@ -21,14 +22,35 @@ namespace Erni.Mobile.MAUI.ViewModels
         {
             Title = "Browse";
 
-            LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-
-            ItemTapped = new Command<Item>(OnItemSelected);
-
-            AddItemCommand = new Command(OnAddItem);
+            ItemTapped = new Command<Item>(async (value)=> await OnItemSelected(value).ConfigureAwait(false));
         }
 
-        async Task ExecuteLoadItemsCommand()
+        [ICommand]
+        public async Task ExecuteLoadItems()
+        {
+            await GetLoadItems().ConfigureAwait(false);
+        }
+
+        [ICommand]
+        public async Task AddItem()
+        {
+            await Shell.Current.GoToAsync(nameof(NewItemPage));
+        }
+
+        public void OnAppearing()
+        {
+            IsBusy = true;
+            SelectedItem = null;
+
+            GetLoadItems().GetAwaiter().GetResult();
+        }
+
+        partial void OnSelectedItemChanged(Item value)
+        {
+            OnItemSelected(value).GetAwaiter().GetResult();
+        }
+
+        async Task GetLoadItems()
         {
             IsBusy = true;
 
@@ -51,30 +73,7 @@ namespace Erni.Mobile.MAUI.ViewModels
             }
         }
 
-        public void OnAppearing()
-        {
-            IsBusy = true;
-            SelectedItem = null;
-
-            ExecuteLoadItemsCommand().GetAwaiter().GetResult();
-        }
-
-        public Item SelectedItem
-        {
-            get => _selectedItem;
-            set
-            {
-                SetProperty(ref _selectedItem, value);
-                OnItemSelected(value);
-            }
-        }
-
-        private async void OnAddItem(object obj)
-        {
-            await Shell.Current.GoToAsync(nameof(NewItemPage));
-        }
-
-        async void OnItemSelected(Item item)
+        async Task OnItemSelected(Item item)
         {
             if (item == null)
                 return;

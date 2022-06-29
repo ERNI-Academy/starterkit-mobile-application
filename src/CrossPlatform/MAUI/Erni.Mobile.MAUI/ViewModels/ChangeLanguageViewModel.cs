@@ -4,9 +4,8 @@ using Erni.Mobile.MAUI.Resources;
 using Erni.Mobile.MAUI.Services.Configuration;
 using Erni.Mobile.MAUI.Services.Logging;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Globalization;
-using System.Windows.Input;
+using CommunityToolkit.Mvvm.Input;
 
 namespace Erni.Mobile.MAUI.ViewModels
 {
@@ -16,22 +15,10 @@ namespace Erni.Mobile.MAUI.ViewModels
 
         public Language SelectedLanguage { get; set; }
 
-        public ICommand ChangeLanguageCommand { get; set; }
-
         public ChangeLanguageViewModel(ILoggingService loggingService, IApplicationSettingsService applicationSettingsService)
             : base(loggingService, applicationSettingsService)
         {
             LoadLanguage();
-            ChangeLanguageCommand = new Command(async () =>
-            {
-                if (SelectedLanguage != null)
-                {
-                    await LocalizationResourceManager.Instance.SetCulture(CultureInfo.GetCultureInfo(SelectedLanguage.CI));
-                    LoadLanguage();
-                    await App.Current.MainPage.DisplayAlert(AppResources.LanguageChanged, "", AppResources.Done);
-                }
-            });
-
         }
 
         void LoadLanguage()
@@ -48,6 +35,15 @@ namespace Erni.Mobile.MAUI.ViewModels
             SelectedLanguage = Languages.FirstOrDefault(pro => pro.CI == LocalizationResourceManager.Instance.CurrentCulture.ThreeLetterISOLanguageName);
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        [ICommand]
+        private async Task ChangeLanguage()
+        {
+            if (SelectedLanguage != null)
+            {
+                await LocalizationResourceManager.Instance.SetCulture(CultureInfo.GetCultureInfo(SelectedLanguage.CI));
+                LoadLanguage();
+                await App.Current.MainPage.DisplayAlert(AppResources.LanguageChanged, "", AppResources.Done);
+            }
+        }
     }
 }

@@ -5,46 +5,10 @@
   "imageSize": 100,
   "commit": false,
   "contributorsPerLine": 7,
-  "projectName": "starterkit-mobile-application",
   "projectOwner": "ERNI-Academy",
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true,
   "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square)](#contributors)",
-  "contributors": [
-    {
-      "login": "Rabosa616",
-      "name": "Rabosa616",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12774781?v=4",
-      "profile": "https://github.com/Rabosa616",
-      "contributions": [
-        "code",
-        "content",
-        "doc",
-        "design",
-        "ideas",
-        "maintenance",
-        "test",
-        "example",
-        "review"
-      ]
-    },
-    {
-      "login": "Robertcs8",
-      "name": "Robertcs8",
-      "avatar_url": "https://avatars.githubusercontent.com/u/100421143?v=4",
-      "profile": "https://github.com/Robertcs8",
-      "contributions": [
-        "code",
-        "content",
-        "doc",
-        "design",
-        "ideas",
-        "maintenance",
-        "test",
-        "example",
-        "review"
-      ]
-    }
-  ]
+  "contributors": []
 }

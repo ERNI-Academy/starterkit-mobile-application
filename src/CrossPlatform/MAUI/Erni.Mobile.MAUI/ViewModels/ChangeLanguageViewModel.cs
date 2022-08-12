@@ -35,7 +35,7 @@ namespace Erni.Mobile.MAUI.ViewModels
             SelectedLanguage = Languages.FirstOrDefault(pro => pro.CI == LocalizationResourceManager.Instance.CurrentCulture.ThreeLetterISOLanguageName);
         }
 
-        [ICommand]
+        [RelayCommand]
         private async Task ChangeLanguage()
         {
             if (SelectedLanguage != null)

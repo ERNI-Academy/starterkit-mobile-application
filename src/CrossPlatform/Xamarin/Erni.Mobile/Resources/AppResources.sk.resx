@@ -140,7 +140,7 @@
     <value>Vykonajte zmeny v súbore XAML a uložte, aby ste videli aktualizáciu používateľského používateľského zariadenia v spustenej aplikácii s XAML Hot Reload. Vyskúšajte to!</value>
   </data>
   <data name="About_LearnMoreAt" xml:space="preserve">
-    <value>Ďalšie informácie sa dozviete na</value>
+    <value>Ďalšie informácie sa dozviete na </value>
   </data>
   <data name="About_LearnMore" xml:space="preserve">
     <value>Zistiť viac</value>

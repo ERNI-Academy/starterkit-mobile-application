@@ -15,7 +15,14 @@ namespace Erni.Mobile.MAUI.Helpers
 
         private LocalizationResourceManager()
         {
-            SetCulture(new CultureInfo(Preferences.Get(LanguageKey, CurrentCulture.TwoLetterISOLanguageName))).GetAwaiter().GetResult();
+            var languageName = Preferences.Get(LanguageKey, CurrentCulture.TwoLetterISOLanguageName);
+            if (languageName == null)
+            {
+                Preferences.Set(LanguageKey, CurrentCulture.TwoLetterISOLanguageName);
+                languageName = CurrentCulture.TwoLetterISOLanguageName;
+            }
+            var culture = new CultureInfo(languageName);
+            SetCulture(culture).GetAwaiter().GetResult();
         }
 
         public string this[string text]

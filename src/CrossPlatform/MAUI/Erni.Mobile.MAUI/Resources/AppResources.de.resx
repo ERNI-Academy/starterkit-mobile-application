@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About_Description" xml:space="preserve">
-    <value>Nehmen Sie Änderungen an Ihrer XAML-Datei vor und speichern Sie sie, um Ihr UI-Update in der laufenden App mit XAML Hot Reload anzuzeigen. Versuche es!!</value>
+    <value>Nehmen Sie Änderungen an Ihrer XAML-Datei vor und speichern Sie sie, um Ihr UI-Update in der laufenden App mit XAML Hot Reload anzuzeigen. Versuche es!</value>
   </data>
   <data name="About_LearnMore" xml:space="preserve">
-    <value>Erfahre mehr!</value>
+    <value>Erfahre mehr</value>
   </data>
   <data name="About_LearnMoreAt" xml:space="preserve">
-    <value>Erfahren Sie mehr unter</value>
+    <value>Erfahren Sie mehr unter </value>
   </data>
   <data name="About_Title" xml:space="preserve">
-    <value>Beginnen Sie jetzt mit der Entwicklung!</value>
+    <value>Beginnen Sie jetzt mit der Entwicklung</value>
   </data>
   <data name="AppShell_About" xml:space="preserve">
     <value>Über</value>
@@ -142,7 +142,7 @@
     <value>Sprache ändern</value>
   </data>
   <data name="Done" xml:space="preserve">
-    <value>Fertig!</value>
+    <value>Fertig</value>
   </data>
   <data name="English" xml:space="preserve">
     <value>Englisch</value>
@@ -154,10 +154,10 @@
     <value>Deutsch</value>
   </data>
   <data name="ItemDetail_Description" xml:space="preserve">
-    <value>Beschreibung</value>
+    <value>Beschreibung:</value>
   </data>
   <data name="ItemDetail_Text" xml:space="preserve">
-    <value>Text</value>
+    <value>Text:</value>
   </data>
   <data name="Item_Add" xml:space="preserve">
     <value>Hinzufügen</value>
@@ -169,13 +169,13 @@
     <value>Anmeldung</value>
   </data>
   <data name="NewItem_Cancel" xml:space="preserve">
-    <value>Abbrechen!</value>
+    <value>Abbrechen</value>
   </data>
   <data name="NewItem_Description" xml:space="preserve">
     <value>Beschreibung</value>
   </data>
   <data name="NewItem_Save" xml:space="preserve">
-    <value>Speichern!</value>
+    <value>Speichern</value>
   </data>
   <data name="NewItem_Text" xml:space="preserve">
     <value>Text</value>
@@ -187,7 +187,7 @@
     <value>Rumänisch</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Speichern!</value>
+    <value>Speichern</value>
   </data>
   <data name="SelectLanguage" xml:space="preserve">
     <value>Sprache auswählen</value>
@@ -199,6 +199,6 @@
     <value>Spanisch</value>
   </data>
   <data name="WelcomeText" xml:space="preserve">
-    <value>Willkommen!</value>
+    <value>Willkommen</value>
   </data>
 </root>

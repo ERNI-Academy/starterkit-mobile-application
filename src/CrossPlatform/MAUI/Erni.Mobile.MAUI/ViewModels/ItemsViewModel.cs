@@ -25,13 +25,13 @@ namespace Erni.Mobile.MAUI.ViewModels
             ItemTapped = new Command<Item>(async (value)=> await OnItemSelected(value).ConfigureAwait(false));
         }
 
-        [ICommand]
+        [RelayCommand]
         public async Task ExecuteLoadItems()
         {
             await GetLoadItems().ConfigureAwait(false);
         }
 
-        [ICommand]
+        [RelayCommand]
         public async Task AddItem()
         {
             await Shell.Current.GoToAsync(nameof(NewItemPage));

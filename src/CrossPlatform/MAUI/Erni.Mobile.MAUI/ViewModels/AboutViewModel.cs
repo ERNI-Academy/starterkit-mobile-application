@@ -12,7 +12,7 @@ namespace Erni.Mobile.MAUI.ViewModels
             Title = "About";
         }
 
-        [ICommand]
+        [RelayCommand]
         public async Task Browse()
         {
             await Browser.OpenAsync("https://dotnet.microsoft.com/en-us/apps/maui");

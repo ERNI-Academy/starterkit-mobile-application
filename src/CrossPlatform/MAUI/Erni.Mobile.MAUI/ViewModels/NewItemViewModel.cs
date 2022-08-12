@@ -27,14 +27,14 @@ namespace Erni.Mobile.MAUI.ViewModels
                 && !String.IsNullOrWhiteSpace(description);
         }
 
-        [ICommand]
+        [RelayCommand]
         private async void Cancel()
         {
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");
         }
 
-        [ICommand(CanExecute = nameof(ValidateSave))]
+        [RelayCommand(CanExecute = nameof(ValidateSave))]
         private async void Save()
         {
             Item newItem = new Item()

@@ -9,7 +9,7 @@
         The overall app visual hierarchy is defined here, along with navigation.
     -->
     
-    <Shell.Resources>
+    <!--<Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light={StaticResource BackGroundLightTheme}, Dark={StaticResource BackGroundDarkTheme}}" />
@@ -25,7 +25,7 @@
             <Style BasedOn="{StaticResource BaseStyle}" TargetType="TabBar" />
             <Style BasedOn="{StaticResource BaseStyle}" TargetType="FlyoutItem" />
         </ResourceDictionary>
-    </Shell.Resources>
+    </Shell.Resources>-->
     
     <TabBar>
         <Tab Title="{extensions:Translate AppShell_About}"

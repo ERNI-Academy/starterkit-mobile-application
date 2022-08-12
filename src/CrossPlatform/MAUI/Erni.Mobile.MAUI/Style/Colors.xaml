@@ -14,18 +14,47 @@
     <Color x:Key="BackGroundLightTheme">#113372</Color>
     <Color x:Key="AccentLightTheme">#ffffff</Color>
     <Color x:Key="TextLightTheme">#ffffff</Color>
+    <Color x:Key="PrimaryLightTheme">#512BD4</Color>
+    <Color x:Key="WhiteLightTheme">#ffffff</Color>
+    <Color x:Key="BlackLightTheme">Black</Color>
     <!--#endregion-->
+
     <!--#region Dark theme colors-->
     <Color x:Key="BackGroundDarkTheme">#113372</Color>
     <Color x:Key="AccentDarkTheme">#ffffff</Color>
     <Color x:Key="TextDarkTheme">#ffffff</Color>
+    <Color x:Key="PrimaryDarkTheme">#512BD4</Color>
+    <Color x:Key="WhiteDarkTheme">#ffffff</Color>
+    <Color x:Key="BlackDarkTheme">Black</Color>
     <!--#endregion-->
     <!--#endregion-->
 
     <!--#region Secondary Colors-->
     <!--#region Light theme colors-->
+    <Color x:Key="SecondaryLightTheme">#DFD8F7</Color>
+    <Color x:Key="TertiaryLightTheme">#2B0B98</Color>
+    <Color x:Key="Gray100LightTheme">#E1E1E1</Color>
+    <Color x:Key="Gray200LightTheme">#C8C8C8</Color>
+    <Color x:Key="Gray300LightTheme">#ACACAC</Color>
+    <Color x:Key="Gray400LightTheme">#919191</Color>
+    <Color x:Key="Gray500LightTheme">#6E6E6E</Color>
+    <Color x:Key="Gray600LightTheme">#404040</Color>
+    <Color x:Key="Gray900LightTheme">#212121</Color>
+    <Color x:Key="Gray950LightTheme">#141414</Color>
     <!--#endregion-->
+
     <!--#region Dark theme colors-->
+    <Color x:Key="SecondaryDarkTheme">#DFD8F7</Color>
+    <Color x:Key="TertiaryDarkThem">#2B0B98</Color>
+    <Color x:Key="Gray100DarkTheme">#E1E1E1</Color>
+    <Color x:Key="Gray200DarkTheme">#C8C8C8</Color>
+    <Color x:Key="Gray300DarkTheme">#ACACAC</Color>
+    <Color x:Key="Gray400DarkTheme">#919191</Color>
+    <Color x:Key="Gray500DarkTheme">#6E6E6E</Color>
+    <Color x:Key="Gray600DarkTheme">#404040</Color>
+    <Color x:Key="Gray900DarkTheme">#212121</Color>
+    <Color x:Key="Gray950DarkTheme">#141414</Color>
     <!--#endregion-->
     <!--#endregion-->
+
 </ResourceDictionary>

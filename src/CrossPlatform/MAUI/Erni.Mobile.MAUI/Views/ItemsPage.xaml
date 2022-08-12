@@ -10,7 +10,7 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Command="{Binding AddItemCommand}" Text="{extensions:Translate Item_Add}"
-                     Order="Primary"/>
+                     Order="Secondary"/>
     </ContentPage.ToolbarItems>
 
     <CollectionView

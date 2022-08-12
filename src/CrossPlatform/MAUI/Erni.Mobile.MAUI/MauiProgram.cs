@@ -23,7 +23,7 @@ public static class MauiProgram
                 fonts.AddFont("fa-solid-900.ttf", "FAS");
                 fonts.AddFont("GlyphIcons.ttf", "GlyphIcons");
             });
-
+        builder.Services.AddLocalization();
         builder.Services.AddTransient<IConfigurationFileProvider, ConfigurationFileProvider>();
         builder.Services.AddTransient<IApplicationSettingsService, ApplicationSettingsService>();
 

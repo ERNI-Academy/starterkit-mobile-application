@@ -34,7 +34,7 @@ namespace Erni.Mobile.ViewModels
             SelectedLanguage = Languages.FirstOrDefault(pro => pro.CI == LocalizationResourceManager.Instance.CurrentCulture.ThreeLetterISOLanguageName);
         }
 
-        [ICommand]
+        [RelayCommand]
         private async Task ChangeLanguage()
         {
             await LocalizationResourceManager.Instance.SetCulture(CultureInfo.GetCultureInfo(SelectedLanguage.CI));

@@ -6,7 +6,7 @@ namespace Erni.Mobile.ViewModels
 {
     public partial class LoginViewModel : BaseViewModel
     {
-        [ICommand]
+        [RelayCommand]
         private async void Login(object obj)
         {
             // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one

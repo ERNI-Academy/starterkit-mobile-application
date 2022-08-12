@@ -12,7 +12,7 @@ namespace Erni.Mobile.ViewModels
             Title = "About";
         }
 
-        [ICommand]
+        [RelayCommand]
         public async Task Browse()
         {
             await Browser.OpenAsync("https://aka.ms/xamarin-quickstart");

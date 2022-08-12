@@ -7,7 +7,7 @@
           "Name": "Appiumdriver",
           "AppiumUrl": "http://127.0.0.1:4725/wd/hub",
           "ApkUrl": "https://github.com/saucelabs/sample-app-mobile/releases/download/2.7.1/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk",
-          "AppPath": "C:\\Repos\\starterkit-mobile-application\\src\\CrossPlatform\\Xamarin\\Erni.Mobile.Android\\bin\\Release\\com.companyname.erni.mobile-Signed.apk",
+          "AppPath": "D:\\Projects\\ERNI\\academy\\All\\starterkit-mobile-application\\src\\CrossPlatform\\Xamarin\\Erni.Mobile.Android\\bin\\Debug\\com.companyname.erni.mobile-Signed.apk",
           "CommandTimeOutInMinutes": 5,
           "DeviceName": "pixel_5_-_api_30",
           "PlatformName": "Android",

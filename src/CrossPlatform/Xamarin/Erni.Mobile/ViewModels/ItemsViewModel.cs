@@ -26,13 +26,13 @@ namespace Erni.Mobile.ViewModels
             ItemTapped = new Command<Item>(async (value) => await OnItemSelected(value).ConfigureAwait(false));
         }
 
-        [ICommand]
-        async Task ExecuteLoadItems()
+        [RelayCommand]
+        void ExecuteLoadItems()
         {
-            await GetLoadItems().ConfigureAwait(false);
+            GetLoadItems();
         }
 
-        [ICommand]
+        [RelayCommand]
         public async Task AddItem()
         {
             await Shell.Current.GoToAsync(nameof(NewItemPage));
@@ -43,30 +43,31 @@ namespace Erni.Mobile.ViewModels
             IsBusy = true;
             SelectedItem = null;
 
-            GetLoadItems().GetAwaiter().GetResult();
+            GetLoadItems();
         }
 
-        async Task GetLoadItems()
+        void GetLoadItems()
         {
-            IsBusy = true;
-
-            try
+            Device.BeginInvokeOnMainThread(async () =>
             {
-                Items.Clear();
-                var items = await DataStore.GetItemsAsync(true);
-                foreach (var item in items)
+                try
                 {
-                    Items.Add(item);
+                    Items.Clear();
+                    var items = await DataStore.GetItemsAsync(true);
+                    foreach (var item in items)
+                    {
+                        Items.Add(item);
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
-            finally
-            {
-                IsBusy = false;
-            }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex);
+                }
+                finally
+                {
+                    IsBusy = false;
+                }
+            });
         }
 
         async Task OnItemSelected(Item item)

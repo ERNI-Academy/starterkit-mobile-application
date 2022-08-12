@@ -506,6 +506,10 @@ Global
 		{734232C6-8F7E-410E-922B-9AC190805569} = {3EB25FFC-B637-451F-B290-E07B61171A5F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+		RESX_ShowPerformanceTraces = True
+		RESX_ShowErrorsInErrorList = True
+		RESX_AutoCreateNewLanguageFiles = True
+		RESX_SortFileContentOnSave = False
 		SolutionGuid = {2B1CA6A8-EB1B-47D8-8C59-5A0D856CBA16}
 	EndGlobalSection
 EndGlobal

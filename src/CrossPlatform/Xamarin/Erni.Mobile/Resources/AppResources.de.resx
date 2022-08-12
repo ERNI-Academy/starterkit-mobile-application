@@ -101,7 +101,7 @@
     <value>Sprache geändert</value>
   </data>
   <data name="Done" xml:space="preserve">
-    <value>Fertig!</value>
+    <value>Fertig</value>
   </data>
   <data name="English" xml:space="preserve">
     <value>Englisch</value>
@@ -122,7 +122,7 @@
     <value>Philippinisch</value>
   </data>
   <data name="WelcomeText" xml:space="preserve">
-    <value>Willkommen!</value>
+    <value>Willkommen</value>
   </data>
   <data name="ChangeLanguage" xml:space="preserve">
     <value>Sprache ändern</value>
@@ -131,25 +131,25 @@
     <value>Sprache auswählen</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Speichern!</value>
+    <value>Speichern</value>
   </data>
   <data name="About_Title" xml:space="preserve">
-    <value>Beginnen Sie jetzt mit der Entwicklung!</value>
+    <value>Beginnen Sie jetzt mit der Entwicklung</value>
   </data>
   <data name="About_Description" xml:space="preserve">
-    <value>Nehmen Sie Änderungen an Ihrer XAML-Datei vor und speichern Sie sie, um Ihr UI-Update in der laufenden App mit XAML Hot Reload anzuzeigen. Versuche es!!</value>
+    <value>Nehmen Sie Änderungen an Ihrer XAML-Datei vor und speichern Sie sie, um Ihr UI-Update in der laufenden App mit XAML Hot Reload anzuzeigen. Versuche es!</value>
   </data>
   <data name="About_LearnMoreAt" xml:space="preserve">
-    <value>Erfahren Sie mehr unter</value>
+    <value>Erfahren Sie mehr unter </value>
   </data>
   <data name="About_LearnMore" xml:space="preserve">
-    <value>Erfahre mehr!</value>
+    <value>Erfahre mehr</value>
   </data>
   <data name="ItemDetail_Text" xml:space="preserve">
-    <value>Text</value>
+    <value>Text:</value>
   </data>
   <data name="ItemDetail_Description" xml:space="preserve">
-    <value>Beschreibung</value>
+    <value>Beschreibung:</value>
   </data>
   <data name="Item_Add" xml:space="preserve">
     <value>Hinzufügen</value>
@@ -164,10 +164,10 @@
     <value>Beschreibung</value>
   </data>
   <data name="NewItem_Cancel" xml:space="preserve">
-    <value>Abbrechen!</value>
+    <value>Abbrechen</value>
   </data>
   <data name="NewItem_Save" xml:space="preserve">
-    <value>Speichern!</value>
+    <value>Speichern</value>
   </data>
   <data name="NewItem_Title" xml:space="preserve">
     <value>Neues Objekt</value>

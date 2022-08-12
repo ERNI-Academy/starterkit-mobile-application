@@ -140,7 +140,7 @@
     <value>Gumawa ng mga pagbabago sa iyong XAML file at i-save para makita ang iyong UI update sa pagpapatakbo ng app na may XAML Hot Reload. Bigyan ito ng subukan!</value>
   </data>
   <data name="About_LearnMoreAt" xml:space="preserve">
-    <value>Alamin pa sa</value>
+    <value>Alamin pa sa </value>
   </data>
   <data name="About_LearnMore" xml:space="preserve">
     <value>Alamin pa ang tungkol sa</value>

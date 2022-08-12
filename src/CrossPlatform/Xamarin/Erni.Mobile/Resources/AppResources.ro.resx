@@ -140,7 +140,7 @@
     <value>Efectuați modificări în fișierul XAML și salvați pentru a vedea actualizarea UI în aplicația care rulează cu XAML Hot Reload. Încearcă!</value>
   </data>
   <data name="About_LearnMoreAt" xml:space="preserve">
-    <value>Aflați mai multe la</value>
+    <value>Aflați mai multe la </value>
   </data>
   <data name="About_LearnMore" xml:space="preserve">
     <value>Află mai multe</value>

@@ -5,19 +5,39 @@ ERNI Academy mobile boilerplate to start a cross-platform or native mobile appli
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-[![Build Xamarin.Forms.Android app](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.Android.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.Android.yml)
-[![Build Xamarin.Forms.iOS app](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.iOS.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.iOS.yml)
-[![Build Xamarin.Forms.UWP app](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.UWP.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-Xamarin.Forms.UWP.yml)
+## Xamarin
 
-[![Build MAUI app](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-MAUI.yml/badge.svg)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-MAUI.yml)
+[![Build Xamarin.Forms.Android app](https://github.com/ERNI-Academy/starterkit-mobile-application-xamarin/actions/workflows/CI-Xamarin.Forms.Android.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application-xamarin/actions/workflows/CI-Xamarin.Forms.Android.yml)
+[![Build Xamarin.Forms.iOS app](https://github.com/ERNI-Academy/starterkit-mobile-application-xamarin/actions/workflows/CI-Xamarin.Forms.iOS.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application-xamarin/actions/workflows/CI-Xamarin.Forms.iOS.yml)
+[![Build Xamarin.Forms.UWP app](https://github.com/ERNI-Academy/starterkit-mobile-application-xamarin/actions/workflows/CI-Xamarin.Forms.UWP.yml/badge.svg?branch=main)](https://github.com/ERNI-Academy/starterkit-mobile-application-xamarin/actions/workflows/CI-Xamarin.Forms.UWP.yml)
 
-[![Sonar Cloud Scan](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-SonaCloud-Scan.yml/badge.svg)](https://github.com/ERNI-Academy/starterkit-mobile-application/actions/workflows/CI-SonaCloud-Scan.yml)
+[![Sonar Cloud Scan](https://github.com/ERNI-Academy/starterkit-mobile-application-xamarin/actions/workflows/CI-SonaCloud-Scan.yml/badge.svg)](https://github.com/ERNI-Academy/starterkit-mobile-application-xamarin/actions/workflows/CI-SonaCloud-Scan.yml)
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application-xamarin&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application-xamarin)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application-xamarin&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application-xamarin)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application-xamarin&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application-xamarin)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application-xamarin&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application-xamarin)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application-xamarin&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application-xamarin)
+
+## Maui
+
+[![Build MAUI app](https://github.com/ERNI-Academy/starterkit-mobile-application-maui/actions/workflows/CI-MAUI.yml/badge.svg)](https://github.com/ERNI-Academy/starterkit-mobile-application-maui/actions/workflows/CI-MAUI.yml)
+
+[![Sonar Cloud Scan](https://github.com/ERNI-Academy/starterkit-mobile-application-maui/actions/workflows/CI-SonaCloud-Scan.yml/badge.svg)](https://github.com/ERNI-Academy/starterkit-mobile-application-maui/actions/workflows/CI-SonaCloud-Scan.yml)
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application-maui&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application-maui)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application-maui&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application-maui)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application-maui&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application-maui)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application-maui&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application-maui)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=ERNI-Academy_starterkit-mobile-application-maui&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=ERNI-Academy_starterkit-mobile-application-maui)
+
+## Flutter
+
+[![Build Status](https://dev.azure.com/erniegh/ERNI-EPH-Mobile-FlutterStack/_apis/build/status/ERNI-Mobile-Blueprint-CI-Android?branchName=master&label=Android)](https://dev.azure.com/erniegh/ERNI-EPH-Mobile-FlutterStack/_build/latest?definitionId=772&branchName=master) [![Build Status](https://dev.azure.com/erniegh/ERNI-EPH-Mobile-FlutterStack/_apis/build/status/ERNI-Mobile-Blueprint-CI-iOS?branchName=master&label=iOS)](https://dev.azure.com/erniegh/ERNI-EPH-Mobile-FlutterStack/_build/latest?definitionId=773&branchName=master) [![Build Status](https://dev.azure.com/erniegh/ERNI-EPH-Mobile-FlutterStack/_apis/build/status/ERNI-Mobile-Blueprint-CI-Web?branchName=master&label=Web)](https://dev.azure.com/erniegh/ERNI-EPH-Mobile-FlutterStack/_build/latest?definitionId=774&branchName=master) [![Build Status](https://dev.azure.com/erniegh/ERNI-EPH-Mobile-FlutterStack/_apis/build/status/ERNI-Mobile-Blueprint-CI-Windows?branchName=master&label=Windows)](https://dev.azure.com/erniegh/ERNI-EPH-Mobile-FlutterStack/_build/latest?definitionId=784&branchName=master) [![Build Status](https://dev.azure.com/erniegh/ERNI-EPH-Mobile-FlutterStack/_apis/build/status/ERNI-Mobile-Blueprint-CI-Code-Validation?branchName=master&label=Code%20Validation)](https://dev.azure.com/erniegh/ERNI-EPH-Mobile-FlutterStack/_build/latest?definitionId=777&branchName=master)
+
+## Ionic
+
+## React Native
 
 ## Getting Started
 
@@ -64,14 +84,14 @@ Follow the Get started documentation on how to install all required tools for ea
 ## Usage Instructions
 
 * CrossPlatform
-  * [Maui](./docs/CrossPlatform/Maui/README.md)
-  * [Xamarin](./docs/CrossPlatform/Xamarin/README.md)
-  * [Flutter](./docs/CrossPlatform/flutter/README.md)
-  * [React Native](./docs/CrossPlatform/reactnative/README.md)
-  * [Ionic](./docs/CrossPlatform/ionic/README.md)
+  * [Maui](https://github.com/ERNI-Academy/starterkit-mobile-application-maui/#readme)
+  * [Xamarin](https://github.com/ERNI-Academy/starterkit-mobile-application-xamarin/#readme)
+  * [Flutter](https://github.com/ERNI-Academy/starterkit-mobile-application-flutter/#readme)
+  * [React Native](https://github.com/ERNI-Academy/starterkit-mobile-application-react-native/#readme)
+  * [Ionic](https://github.com/ERNI-Academy/starterkit-mobile-application-ionic/#readme)
 * Native
-  * [Android](./docs/native/android/README.md)
-  * [iOS](./docs/native/ios/README.md)
+  * Android
+  * iOS
 
 ## Contributing
 

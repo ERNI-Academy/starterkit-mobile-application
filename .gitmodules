@@ -1,0 +1,20 @@
+[submodule "src/CrossPlatform/Xamarin"]
+	path = src/CrossPlatform/Xamarin
+	url = https://github.com/ERNI-Academy/starterkit-mobile-application-xamarin
+	branch = main
+[submodule "src/CrossPlatform/Maui"]
+	path = src/CrossPlatform/Maui
+	url = https://github.com/ERNI-Academy/starterkit-mobile-application-maui
+	branch = main
+[submodule "src/CrossPlatform/Flutter"]
+	path = src/CrossPlatform/Flutter
+	url = https://github.com/ERNI-Academy/starterkit-mobile-application-flutter
+	branch = main
+[submodule "src/CrossPlatform/Ionic"]
+	path = src/CrossPlatform/Ionic
+	url = https://github.com/ERNI-Academy/starterkit-mobile-application-ionic
+	branch = main
+[submodule "src/CrossPlatform/ReactNative"]
+	path = src/CrossPlatform/ReactNative
+	url = https://github.com/ERNI-Academy/starterkit-mobile-application-react-native
+	branch = main
